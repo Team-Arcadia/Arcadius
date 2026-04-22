@@ -1,0 +1,16 @@
+# Exclure les logs
+logs/
+*.log
+
+# Exclure les secrets
+.env
+__pycache__/
+*.pyc
+
+# Données Runtime (Mémoire dynamique)
+data/user_memory.json
+data/user_reactions.json
+
+node_modules/
+pnpm-lock.yaml
+.VsCodeCounter/

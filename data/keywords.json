@@ -1,0 +1,132 @@
+{
+  "enabled": true,
+  "caseSensitive": false,
+  "excludedChannels": ["1350128375804596275", "1454990616327884955" ],
+  "keywords": [
+    {
+      "word": ["crash", "bug", "problème"],
+      "response": "https://discord.com/channels/1346965857288589472/1348235685047566346",
+      "enabled": true
+    },
+    {
+      "word": ["site", "site web"],
+      "response": "https://www.arcadia-echoes-of-power.fr/",
+      "enabled": true
+    },
+    {
+      "word": ["boutique", "shop", "acheter", "grade", "rang"],
+      "response": "https://www.arcadia-echoes-of-power.fr/shop",
+      "enabled": true
+    },
+    {
+      "word": ["wiki", "guide", "documentation"],
+      "response": "https://www.arcadia-echoes-of-power.fr/wiki",
+      "enabled": true
+    },
+    {
+      "word": ["faq", "question fréquente"],
+      "response": "https://www.arcadia-echoes-of-power.fr/faq",
+      "enabled": true
+    },
+    {
+      "word": ["launcher", "télécharger", "installer", "modpack", "rejoindre"],
+      "response": "https://www.arcadia-echoes-of-power.fr/launcher",
+      "enabled": true
+    },
+    {
+      "word": ["support", "ticket", "aide"],
+      "response": "https://www.arcadia-echoes-of-power.fr/support/tickets",
+      "enabled": true
+    },
+    {
+      "word": ["staff", "équipe", "modérateur", "admin"],
+      "response": "https://www.arcadia-echoes-of-power.fr/staff",
+      "enabled": true
+    },
+    {
+      "word": ["vote", "voter", "voté"],
+      "response": "https://www.arcadia-echoes-of-power.fr/vote",
+      "enabled": true
+    },
+    {
+      "word": ["discord"],
+      "response": "https://arcadia-echoes-of-power.fr/discord",
+      "enabled": true
+    },
+    {
+      "word": ["galerie", "gallery", "screenshot", "photo"],
+      "response": "https://www.arcadia-echoes-of-power.fr/gallery",
+      "enabled": true
+    },
+    {
+      "word": ["vidéo communauté", "youtube"],
+      "response": "https://www.arcadia-echoes-of-power.fr/communitytube",
+      "enabled": true
+    },
+    {
+      "word": ["suggestion", "idée", "proposer"],
+      "response": "https://www.arcadia-echoes-of-power.fr/suggest",
+      "enabled": true
+    },
+    {
+      "word": ["recrutement", "candidature", "postuler"],
+      "response": "https://www.arcadia-echoes-of-power.fr/recrutement",
+      "enabled": true
+    },
+    {
+      "word": ["joueurs", "players"],
+      "response": "https://www.arcadia-echoes-of-power.fr/players",
+      "enabled": true
+    },
+    {
+      "word": ["avis", "review", "témoignage"],
+      "response": "https://www.arcadia-echoes-of-power.fr/review",
+      "enabled": true
+    },
+    {
+      "word": ["récompense journalière", "daily", "coffre journalier"],
+      "response": "https://www.arcadia-echoes-of-power.fr/mydailychest",
+      "enabled": true
+    },
+    {
+      "word": ["don", "donation", "soutenir"],
+      "response": "https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00",
+      "enabled": true
+    },
+    {
+      "word": ["calendrier", "événement", "event"],
+      "response": "https://www.arcadia-echoes-of-power.fr/calendar",
+      "enabled": true
+    },
+    {
+      "word": ["changelog", "mise à jour"],
+      "response": "https://www.arcadia-echoes-of-power.fr/changelog",
+      "enabled": true
+    },
+    {
+      "word": ["news", "actualité", "annonce"],
+      "response": "https://www.arcadia-echoes-of-power.fr/news",
+      "enabled": true
+    },
+    {
+      "word": ["règlement", "règles", "charte"],
+      "response": "https://www.arcadia-echoes-of-power.fr/reglement",
+      "enabled": true
+    },
+    {
+      "word": ["profil", "compte"],
+      "response": "https://www.arcadia-echoes-of-power.fr/profile",
+      "enabled": true
+    },
+    {
+      "word": ["historique achat"],
+      "response": "https://www.arcadia-echoes-of-power.fr/shop/profile",
+      "enabled": true
+    },
+    {
+      "word": ["skin", "skin 3d"],
+      "response": "https://www.arcadia-echoes-of-power.fr/skin3d",
+      "enabled": true
+    }
+  ]
+}

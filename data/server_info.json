@@ -1,0 +1,13 @@
+{
+    "general": {
+        "version_minecraft": "1.21.1 (NeoForge)",
+        "java_required": "Java 21",
+        "connection": "Nécessite notre Launcher Personnalisé.",
+        "developer": "Arcadia: Echoes Of Power"
+    },
+    "status": {
+        "v1": "Stable et entièrement accessible.",
+        "v2": "Accessible et en amélioration continue.",
+        "summary": "La version 2 (v2) est désormais accessible en NeoForge 1.21.1 avec des mises à jour régulières."
+    }
+}

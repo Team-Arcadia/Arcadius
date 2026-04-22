@@ -1,0 +1,354 @@
+{
+  "ignored_users": ["vyrriox", "not_._found", "gaspich", "jlpopeye", "romain.pqd", "aaamine", "skaizenh"," fufu8822", "harpie07", "cjustenathan"],
+  "bug": {
+    "keywords": [
+      "un bug", "des bugs", "bugué", "buggé", "y'a un bug", "j'ai un bug", "gros bug", "petit bug",
+      "le serveur crash", "ça a crash", "serveur fermé", "serveur down", "crash de connexion", "jeu crash", "launcher crash",
+      "une erreur", "erreur java", "erreur de connexion", "message d'erreur", "error code", "internal server error",
+      "marche pas", "fonctionne pas", "ça veut pas marcher", "je n'arrive pas", "impossible de",
+      "ça lag", "gros lag", "fps drop", "ça rame", "trop de latence", "connexion perdue",
+      "j'ai un problème", "gros souci", "petit souci", "soucis avec", "souci de", "probleme serveur", "probleme connexion",
+      "je suis bloqué", "coincé", "glitch", "cassé", "item disparu", "inventaire vide", "perdu mon stuff", "mort bizarre"
+    ],
+    "templates": [
+      "Je te laisse aller poser ta question dans le channel https://discord.com/channels/1346965857288589472/1380977057881784410 ! Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
+      "Un bug ? 🐛 Décris-le sur ce channel https://discord.com/channels/1346965857288589472/1380977057881784410 ! Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
+      "C'est par ici qu'on gère les bugs : https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
+      "Le bug te poursuit ? 😅 Viens en parler ici avec tous les détails : https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
+      "Problème détecté ! 🚨 Mets tes infos sur https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin."
+    ]
+  },
+  "installation": {
+    "keywords": [
+      "comment installer", "pour installer", "tuto installation", "aider à installer", "installer le modpack", "installer le jeu", "setup du jeu",
+      "comment télécharger", "pour télécharger", "où télécharger", "telecharger le launcher", "télécharger forge", "lien de téléchargement", "download",
+      "installer java", "quelle version de java", "problème java", "erreur java au lancement",
+      "le mod pack", "mettre le modpack", "installer les mods", "ajouter les mods", "dossier mods",
+      "launcher arcadia", "lancer le jeu", "démarrer le jeu"
+    ],
+    "templates": [
+      "Pour l'installation, c'est par là: https://arcadia-echoes-of-power.fr/launcher - On te guidera étape par étape! 📥",
+      "T'as besoin d'aide pour installer ? https://arcadia-echoes-of-power.fr/launcher est LE channel qu'il te faut!",
+      "Installation compliquée ? Rends-toi sur https://arcadia-echoes-of-power.fr/launcher et suis les instructions avec l'équipe! 👨‍💻",
+      "Le modpack ne s'installe pas ? Pose ta question ici: https://arcadia-echoes-of-power.fr/launcher et on va résoudre ça ensemble!",
+      "Des soucis d'installation ? 🔧 Va checker https://arcadia-echoes-of-power.fr/launcher, c'est là qu'on aide les gens!"
+    ]
+  },
+  "gameplay": {
+    "keywords": [
+      "comment jouer", "pour jouer", "est-ce qu'on peut jouer", "commencer à jouer", "débuter sur le serveur", "bien débuter", "tuto survie",
+      "comment faire pour", "astuce pour", "besoin d'aide pour", "comment on craft", "c'est quoi la touche", "comment ouvrir",
+      "les règles", "le règlement", "c'est autorisé de", "on a le droit de", "règle du serveur",
+      "comment rejoindre", "pour nous rejoindre", "comment aller sur",
+      "c'est quoi le but", "tuto du serveur", "guide officiel", "wiki du serveur", "lien du wiki"
+    ],
+    "templates": [
+      "Des questions sur le gameplay ? Va sur https://arcadia-echoes-of-power.fr/wiki et l'équipe t'expliquera tout! 🎮",
+      "Tu veux savoir comment jouer ? Rends-toi ici: https://arcadia-echoes-of-power.fr/wiki - Les joueurs te diront comment faire!",
+      "Besoin de conseils pour le serveur ? Demande sur https://arcadia-echoes-of-power.fr/wiki, y'a toujours quelqu'un pour aider! 👥",
+      "Comment rejoindre le serveur ? C'est expliqué ici: https://arcadia-echoes-of-power.fr/wiki - Tout ce qu'il te faut!",
+      "T'as besoin d'aide pour jouer ? https://arcadia-echoes-of-power.fr/wiki c'est le bon endroit pour tes questions! 🚀"
+    ]
+  },
+  "vote": {
+    "keywords": [
+      "vote", "voter", "comment voter", "ou voter", "où voter", "site de vote",
+      "faire un vote", "comment on fait pour voter", "comment on fais pour voter", "lien de vote"
+    ],
+    "templates": [
+      "Tu peux voter ici : https://www.arcadia-echoes-of-power.fr/vote 🗳️",
+      "Pour voter et récupérer tes récompenses, c'est par là : https://www.arcadia-echoes-of-power.fr/vote ✨",
+      "Le lien de vote est ici : https://www.arcadia-echoes-of-power.fr/vote",
+      "Chaque vote compte pour la communauté ! Rends-toi sur https://www.arcadia-echoes-of-power.fr/vote 💪",
+      "Vote et aide Arcadia à grandir : https://www.arcadia-echoes-of-power.fr/vote 🚀",
+      "T'as oublié de voter ? C'est par ici : https://www.arcadia-echoes-of-power.fr/vote"
+    ]
+  },
+  "site": {
+    "keywords": [
+      "site", "site web"
+    ],
+    "templates": [
+      "Voici le site officiel : https://www.arcadia-echoes-of-power.fr/",
+      "Tu cherches le site d'Arcadia ? C'est par là : https://www.arcadia-echoes-of-power.fr/ 🌐",
+      "Découvre notre plateforme complète : https://www.arcadia-echoes-of-power.fr/ ✨",
+      "Tout ce que tu dois savoir sur Arcadia se trouve ici : https://www.arcadia-echoes-of-power.fr/ 📱"
+    ]
+  },
+  "boutique": {
+    "keywords": [
+      "boutique", "shop", "acheter", "grade", "rang"
+    ],
+    "templates": [
+      "La boutique est ici : https://www.arcadia-echoes-of-power.fr/shop",
+      "Envie de personnaliser ton expérience ? Visite la boutique : https://www.arcadia-echoes-of-power.fr/shop 🛍️",
+      "Retrouve tous les grades et objets premium ici : https://www.arcadia-echoes-of-power.fr/shop ⭐",
+      "Pour améliorer ton expérience, la boutique est là : https://www.arcadia-echoes-of-power.fr/shop 💎"
+    ]
+  },
+  "wiki": {
+    "keywords": [
+      "wiki", "guide", "documentation"
+    ],
+    "templates": [
+      "Le wiki est ici : https://www.arcadia-echoes-of-power.fr/wiki",
+      "Pour apprendre les mécaniques du serveur, consulte le wiki : https://www.arcadia-echoes-of-power.fr/wiki 📚",
+      "Tous les guides et documentations : https://www.arcadia-echoes-of-power.fr/wiki 🎓",
+      "Tu trouveras toutes tes réponses sur le wiki : https://www.arcadia-echoes-of-power.fr/wiki 🔍"
+    ]
+  },
+  "faq": {
+    "keywords": [
+      "faq", "question fréquente"
+    ],
+    "templates": [
+      "La FAQ est disponible ici : https://www.arcadia-echoes-of-power.fr/faq",
+      "Tes questions ont probablement déjà été posées ! Va voir la FAQ : https://www.arcadia-echoes-of-power.fr/faq ❓",
+      "Les questions fréquemment posées sont ici : https://www.arcadia-echoes-of-power.fr/faq 💡",
+      "Besoin de réponses rapides ? Consulte la FAQ : https://www.arcadia-echoes-of-power.fr/faq ⚡"
+    ]
+  },
+  "support_liens": {
+    "keywords": [
+      "support", "ticket", "aide"
+    ],
+    "templates": [
+      "Le support est ici : https://www.arcadia-echoes-of-power.fr/support/tickets",
+      "Ouvre un ticket de support pour ton problème : https://www.arcadia-echoes-of-power.fr/support/tickets 🎫",
+      "L'équipe support est disponible ici : https://www.arcadia-echoes-of-power.fr/support/tickets 🤝",
+      "Besoin d'une aide professionnelle ? Crée un ticket : https://www.arcadia-echoes-of-power.fr/support/tickets 👩‍💼"
+    ]
+  },
+  "staff": {
+    "keywords": [
+      "staff", "équipe", "modérateur", "admin", "modo"
+    ],
+    "templates": [
+      "La page staff est ici : https://www.arcadia-echoes-of-power.fr/staff",
+      "Rencontre l'équipe qui gère Arcadia : https://www.arcadia-echoes-of-power.fr/staff 👥",
+      "Découvre nos modérateurs et admins : https://www.arcadia-echoes-of-power.fr/staff 🛡️",
+      "Qui est qui dans l'équipe ? Regarde la page staff : https://www.arcadia-echoes-of-power.fr/staff 👨‍💼"
+    ]
+  },
+  "discord": {
+    "keywords": [
+      "discord"
+    ],
+    "templates": [
+      "Le Discord est ici : https://arcadia-echoes-of-power.fr/discord",
+      "Rejoins la communauté sur Discord : https://arcadia-echoes-of-power.fr/discord 💬",
+      "Viens discuter avec nous sur Discord : https://arcadia-echoes-of-power.fr/discord 🎮",
+      "L'endroit idéal pour suivre l'actualité : https://arcadia-echoes-of-power.fr/discord 📢"
+    ]
+  },
+  "gallery": {
+    "keywords": [
+      "galerie", "gallery", "screenshot", "photo"
+    ],
+    "templates": [
+      "La galerie est ici : https://www.arcadia-echoes-of-power.fr/gallery",
+      "Partage tes plus beaux screenshots ! https://www.arcadia-echoes-of-power.fr/gallery 📸",
+      "Admire les créations de la communauté : https://www.arcadia-echoes-of-power.fr/gallery 🎨",
+      "Consulte la galerie pour voir les meilleurs moments : https://www.arcadia-echoes-of-power.fr/gallery 🏆"
+    ]
+  },
+  "community_video": {
+    "keywords": [
+      "vidéo communauté", "youtube"
+    ],
+    "templates": [
+      "Les vidéos de la communauté sont ici : https://www.arcadia-echoes-of-power.fr/communitytube",
+      "Regarde les vidéos de tes joueurs préférés ! https://www.arcadia-echoes-of-power.fr/communitytube 🎥",
+      "Des tutos et streams au même endroit : https://www.arcadia-echoes-of-power.fr/communitytube ▶️",
+      "La plateforme vidéo de la communauté : https://www.arcadia-echoes-of-power.fr/communitytube 📹"
+    ]
+  },
+  "suggestions": {
+    "keywords": [
+      "suggestion", "idée", "proposer"
+    ],
+    "templates": [
+      "Tu peux faire une suggestion ici : https://www.arcadia-echoes-of-power.fr/suggest",
+      "Tes idées comptent ! Propose-les ici : https://www.arcadia-echoes-of-power.fr/suggest 💡",
+      "Aide à façonner l'avenir d'Arcadia avec tes suggestions : https://www.arcadia-echoes-of-power.fr/suggest 🚀",
+      "T'as une idée géniale ? Partage-la : https://www.arcadia-echoes-of-power.fr/suggest ✨"
+    ]
+  },
+  "recruitment": {
+    "keywords": [
+      "recrutement", "candidature", "postuler"
+    ],
+    "templates": [
+      "Le recrutement est ici : https://www.arcadia-echoes-of-power.fr/recrutement",
+      "T'as envie de rejoindre l'équipe ? Postule ! https://www.arcadia-echoes-of-power.fr/recrutement 💼",
+      "Nous recherchons de nouveaux talents : https://www.arcadia-echoes-of-power.fr/recrutement 🌟",
+      "Intéressé pour faire partie du staff ? C'est par ici : https://www.arcadia-echoes-of-power.fr/recrutement 👨‍🔬"
+    ]
+  },
+  "players": {
+    "keywords": [
+      "joueurs", "players"
+    ],
+    "templates": [
+      "La liste des joueurs est ici : https://www.arcadia-echoes-of-power.fr/players",
+      "Retrouve tous tes amis joueurs : https://www.arcadia-echoes-of-power.fr/players 👥",
+      "Consulte le classement des joueurs : https://www.arcadia-echoes-of-power.fr/players 🏅",
+      "Qui joue en ce moment ? Regarde ici : https://www.arcadia-echoes-of-power.fr/players 🎮"
+    ]
+  },
+  "reviews": {
+    "keywords": [
+      "avis", "review", "témoignage"
+    ],
+    "templates": [
+      "Les avis sont ici : https://www.arcadia-echoes-of-power.fr/review",
+      "Partage ton expérience avec la communauté : https://www.arcadia-echoes-of-power.fr/review ⭐",
+      "Lis ce que pensent les autres joueurs : https://www.arcadia-echoes-of-power.fr/review 📝",
+      "Donne ton avis sur Arcadia : https://www.arcadia-echoes-of-power.fr/review 💬"
+    ]
+  },
+  "daily_reward": {
+    "keywords": [
+      "récompense journalière", "daily", "coffre journalier"
+    ],
+    "templates": [
+      "La récompense quotidienne est ici : https://www.arcadia-echoes-of-power.fr/mydailychest",
+      "Réclame ton coffre journalier ! https://www.arcadia-echoes-of-power.fr/mydailychest 🎁",
+      "Don't forget your daily rewards : https://www.arcadia-echoes-of-power.fr/mydailychest 💰",
+      "Chaque jour apporte ses récompenses : https://www.arcadia-echoes-of-power.fr/mydailychest ✨"
+    ]
+  },
+  "donation": {
+    "keywords": [
+      "don", "donation", "soutenir"
+    ],
+    "templates": [
+      "Tu peux soutenir le projet ici : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00",
+      "Aide à faire grandir Arcadia ! https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 ❤️",
+      "Ton soutien nous aide énormément : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 💙",
+      "Contribue à notre développement : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 🙏"
+    ]
+  },
+  "calendar": {
+    "keywords": [
+      "calendrier", "événement", "event"
+    ],
+    "templates": [
+      "Le calendrier est ici : https://www.arcadia-echoes-of-power.fr/calendar",
+      "Reste au courant des événements : https://www.arcadia-echoes-of-power.fr/calendar 📅",
+      "Découvre les prochains événements : https://www.arcadia-echoes-of-power.fr/calendar 🎉",
+      "Marque tes événements favoris : https://www.arcadia-echoes-of-power.fr/calendar 📌"
+    ]
+  },
+  "changelog": {
+    "keywords": [
+      "changelog", "mise à jour"
+    ],
+    "templates": [
+      "Le changelog est ici : https://www.arcadia-echoes-of-power.fr/changelog",
+      "Suis les dernières mises à jour : https://www.arcadia-echoes-of-power.fr/changelog 📝",
+      "Quoi de neuf sur le serveur ? https://www.arcadia-echoes-of-power.fr/changelog ⚙️",
+      "Découvre les changements récents : https://www.arcadia-echoes-of-power.fr/changelog 🔄"
+    ]
+  },
+  "news": {
+    "keywords": [
+      "news", "actualité", "annonce"
+    ],
+    "templates": [
+      "Les actualités sont ici : https://www.arcadia-echoes-of-power.fr/news",
+      "Sois toujours au courant de l'actualité : https://www.arcadia-echoes-of-power.fr/news 📰",
+      "Les dernières annonces importantes : https://www.arcadia-echoes-of-power.fr/news 📢",
+      "Ne manque pas les infos importantes : https://www.arcadia-echoes-of-power.fr/news 🔔"
+    ]
+  },
+  "rules": {
+    "keywords": [
+      "règlement", "règles", "charte"
+    ],
+    "templates": [
+      "Le règlement est ici : https://www.arcadia-echoes-of-power.fr/reglement",
+      "Lis le règlement pour bien comprendre les règles : https://www.arcadia-echoes-of-power.fr/reglement 📖",
+      "Pour une meilleure expérience, respecte nos règles : https://www.arcadia-echoes-of-power.fr/reglement ⚖️",
+      "Tout est expliqué dans la charte : https://www.arcadia-echoes-of-power.fr/reglement 🛡️"
+    ]
+  },
+  "profile": {
+    "keywords": [
+      "profil", "compte"
+    ],
+    "templates": [
+      "Ton profil est ici : https://www.arcadia-echoes-of-power.fr/profile",
+      "Accède à tes infos de compte : https://www.arcadia-echoes-of-power.fr/profile 👤",
+      "Personnalise ton profil : https://www.arcadia-echoes-of-power.fr/profile 🎨",
+      "Gère ton profil depuis le portail : https://www.arcadia-echoes-of-power.fr/profile ⚙️"
+    ]
+  },
+  "shop_history": {
+    "keywords": [
+      "historique achat"
+    ],
+    "templates": [
+      "L'historique de boutique est ici : https://www.arcadia-echoes-of-power.fr/shop/profile",
+      "Vérifie tes achats précédents : https://www.arcadia-echoes-of-power.fr/shop/profile 📦",
+      "Tous tes achats sont listés ici : https://www.arcadia-echoes-of-power.fr/shop/profile 🛒",
+      "Consult ton historique d'achats : https://www.arcadia-echoes-of-power.fr/shop/profile 💳"
+    ]
+  },
+  "my_skin_3d": {
+    "keywords": [
+      "skin", "skin 3d"
+    ],
+    "templates": [
+      "Le visualiseur de skin 3D est ici : https://www.arcadia-echoes-of-power.fr/skin3d",
+      "Visualise ton skin en 3D : https://www.arcadia-echoes-of-power.fr/skin3d 🎨",
+      "Vois comment tu parais en jeu ! https://www.arcadia-echoes-of-power.fr/skin3d 👕",
+      "Consulte la prévisualisation de ton skin : https://www.arcadia-echoes-of-power.fr/skin3d 3️⃣"
+    ]
+  },
+  "ip": {
+    "keywords": [
+      "c'est quoi l'ip", "donnez l'ip", "donne l'ip", "donner l'ip", "ip du serveur", "ip du serv", "ip pour jouer", "ip de connexion", "ton ip", "son ip", "l'ip ",
+      "quelle est l'adresse", "adresse du serveur", "adresse de connexion", "adresse pour rejoindre", "l'adresse ip",
+      "comment se connecter", "se connecter au jeu", "port du serveur", "c'est quoi le port"
+    ],
+    "templates": [
+      "Tu cherches l'IP du serveur ? Toutes les infos pour nous rejoindre sont ici : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🌍",
+      "Pour te connecter à Arcadia, suis les instructions sur cette page : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🚀",
+      "L'adresse du serveur et la marche à suivre sont expliquées ici : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🎮",
+      "Envie de nous rejoindre ? Voici l'IP et les détails : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia ✨",
+      "Toutes les infos de connexion sont sur le wiki : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia À très vite en jeu !"
+    ]
+  },
+  "serveur_prive": {
+    "keywords": [
+      "serveur privé", "serveur prive", "faire un serveur privé", "avoir un serveur",
+      "serveur perso", "mon serveur", "creer un serveur", "créer un serveur", "mon propre serveur",
+      "heberger un serveur", "héberger arcadia", "hebergement minecraft", "hébergement java",
+      "serveur lordhosting", "louer un serveur", "serveur local", "jouer en local", "réseau local"
+    ],
+    "templates": [
+      "Tu veux créer ton propre serveur privé ? Découvre comment faire ici : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🛠️",
+      "Pour héberger ton serveur Arcadia privé, suis notre guide détaillé : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 💻",
+      "Besoin d'aide pour ton serveur perso ? Ce tuto est fait pour toi : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🔧",
+      "Si tu montes un serveur privé, jette un œil à cet article : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 📚",
+      "Toutes les étapes pour installer ton propre serveur sont expliquées là : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🚀"
+    ]
+  },
+  "insult": {
+    "keywords": [
+      "merde", "putain", "connard", "connasse", "salope", "salopard", "fdp", "fils de pute",
+      " ta gueule", " tg ", "ferme ta gueule", "ntm", "nique ta mere", "nique ta mère", " niquer ",
+      "fait chier", "vas chier", "allez chier",
+      "con", "conne", "espece de con", " idiot", " débile", "gogol", "mongol", "abruti",
+      "bâtard", "batard", "enculé", "encule", "encul"
+    ],
+    "templates": [
+      "Attention à ton langage ! Le respect est primordial ici. Je t'invite à (re)lire le règlement : https://arcadia-echoes-of-power.fr/reglement ⚠️",
+      "Hop hop hop, on surveille son vocabulaire ! Merci de respecter les autres joueurs et le règlement du serveur : https://arcadia-echoes-of-power.fr/reglement 🛑",
+      "Ce genre de propos n'est pas toléré sur notre Discord. Merci de faire attention à ce que tu dis. Le règlement est disponible ici : https://arcadia-echoes-of-power.fr/reglement 📜",
+      "Restons courtois ! Les insultes n'ont pas leur place ici. N'oublie pas de consulter notre règlement : https://arcadia-echoes-of-power.fr/reglement 🛡️",
+      "Attention aux mots que tu emploies. Le non-respect des règles peut entraîner des sanctions. Lis le règlement par ici : https://arcadia-echoes-of-power.fr/reglement ⛔"
+    ]
+  }
+}

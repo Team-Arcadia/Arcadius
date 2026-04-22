@@ -1,0 +1,29 @@
+{
+    "links": {
+        "site": "https://www.arcadia-echoes-of-power.fr/",
+        "boutique": "https://www.arcadia-echoes-of-power.fr/shop",
+        "wiki": "https://www.arcadia-echoes-of-power.fr/wiki",
+        "faq": "https://www.arcadia-echoes-of-power.fr/faq",
+        "launcher": "https://www.arcadia-echoes-of-power.fr/launcher",
+        "support": "https://www.arcadia-echoes-of-power.fr/support/tickets",
+        "whitelist": "https://www.arcadia-echoes-of-power.fr/support/category/1/tickets/create",
+        "staff": "https://www.arcadia-echoes-of-power.fr/staff",
+        "vote": "https://www.arcadia-echoes-of-power.fr/vote",
+        "discord": "https://arcadia-echoes-of-power.fr/discord",
+        "gallery": "https://www.arcadia-echoes-of-power.fr/gallery",
+        "community_video": "https://www.arcadia-echoes-of-power.fr/communitytube",
+        "suggestions": "https://www.arcadia-echoes-of-power.fr/suggest",
+        "recruitment": "https://www.arcadia-echoes-of-power.fr/recrutement",
+        "players": "https://www.arcadia-echoes-of-power.fr/players",
+        "reviews": "https://www.arcadia-echoes-of-power.fr/review",
+        "daily_reward": "https://www.arcadia-echoes-of-power.fr/mydailychest",
+        "donation": "https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00",
+        "calendar": "https://www.arcadia-echoes-of-power.fr/calendar",
+        "changelog": "https://www.arcadia-echoes-of-power.fr/changelog",
+        "news": "https://www.arcadia-echoes-of-power.fr/news",
+        "rules": "https://www.arcadia-echoes-of-power.fr/reglement",
+        "profile": "https://www.arcadia-echoes-of-power.fr/profile",
+        "shop_history": "https://www.arcadia-echoes-of-power.fr/shop/profile",
+        "my_skin_3d": "https://www.arcadia-echoes-of-power.fr/skin3d"
+    }
+}

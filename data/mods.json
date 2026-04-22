@@ -1,0 +1,1619 @@
+{
+    "general_mods": [
+        {
+            "name": "3d_placeable_food",
+            "version": "2.4.0",
+            "description": "Permet de placer la nourriture comme blocs de décoration."
+        },
+        {
+            "name": "accessories-neoforge",
+            "version": "1.1.0-beta.52",
+            "description": "Système de base pour les équipements additionnels."
+        },
+        {
+            "name": "addonslib",
+            "version": "1.21.1-1.9",
+            "description": "Librairie technique pour les addons."
+        },
+        {
+            "name": "advancednetherite",
+            "version": "2.3.1",
+            "description": "Ajoute de nouveaux paliers d'armures et outils en Netherite."
+        },
+        {
+            "name": "AdvancementPlaques",
+            "version": "1.6.8",
+            "description": "Affiche les succès sous forme de plaques stylisées."
+        },
+        {
+            "name": "aether",
+            "version": "1.5.10",
+            "description": "Ajoute la dimension céleste de l'Aether."
+        },
+        {
+            "name": "AetherVillages",
+            "version": "1.0.8",
+            "description": "Génère des villages habités dans l'Aether."
+        },
+        {
+            "name": "AI-Improvements",
+            "version": "0.5.3",
+            "description": "Optimise l'intelligence artificielle pour réduire le lag serveur."
+        },
+        {
+            "name": "Almanac",
+            "version": "1.5.0",
+            "description": "Guide et encyclopédie interactive en jeu."
+        },
+        {
+            "name": "AmbientSounds",
+            "version": "v6.3.1",
+            "description": "Ajoute des ambiances sonores immersives selon le biome."
+        },
+        {
+            "name": "amendments",
+            "version": "2.0.13",
+            "description": "Améliore les interactions avec les blocs vanilla (lanternes, chaudrons)."
+        },
+        {
+            "name": "animalgarden-commonraven",
+            "version": "1.0.0",
+            "description": "Ajoute des corbeaux au jeu."
+        },
+        {
+            "name": "animalgarden-manatee",
+            "version": "1.0.0",
+            "description": "Ajoute des lamantins."
+        },
+        {
+            "name": "animalgarden-meerkat",
+            "version": "1.0.4",
+            "description": "Ajoute des suricates."
+        },
+        {
+            "name": "animalgarden-mouse",
+            "version": "1.0.3",
+            "description": "Ajoute des souris."
+        },
+        {
+            "name": "animalgarden-owl",
+            "version": "1.2.2",
+            "description": "Ajoute des hiboux et chouettes."
+        },
+        {
+            "name": "animalgarden-redpanda",
+            "version": "1.1.1",
+            "description": "Ajoute des pandas roux."
+        },
+        {
+            "name": "animalgarden_porcupine",
+            "version": "1.0.2",
+            "description": "Ajoute des porcs-épics."
+        },
+        {
+            "name": "another_furniture",
+            "version": "4.0.2",
+            "description": "Ajoute du mobilier fonctionnel (chaises, tables, rideaux)."
+        },
+        {
+            "name": "anvianslib",
+            "version": "1.4.2",
+            "description": "Librairie technique nécessaire à certains mods."
+        },
+        {
+            "name": "Apotheosis",
+            "version": "8.4.1",
+            "description": "Refonte majeure des enchantements, du loot et des spawners."
+        },
+        {
+            "name": "ApothicAttributes",
+            "version": "2.9.0",
+            "description": "Gère les statistiques étendues des entités."
+        },
+        {
+            "name": "ApothicEnchanting",
+            "version": "1.5.0",
+            "description": "Extension du système d'enchantement d'Apotheosis."
+        },
+        {
+            "name": "ApothicSpawners",
+            "version": "1.3.2",
+            "description": "Permet de modifier et capturer les spawners."
+        },
+        {
+            "name": "apothic_sups_enchanting",
+            "version": "0.1.0",
+            "description": "Compatibilité entre Apotheosis et Supplementaries."
+        },
+        {
+            "name": "appleskin",
+            "version": "3.0.7",
+            "description": "Affiche la saturation et les valeurs nutritives de la nourriture."
+        },
+        {
+            "name": "Aquaculture",
+            "version": "2.7.17",
+            "description": "Refonte totale du système de pêche avec de nouveaux poissons."
+        },
+        {
+            "name": "aquaculturedelight",
+            "version": "1.2.0",
+            "description": "Compatibilité entre Aquaculture et Farmer's Delight."
+        },
+        {
+            "name": "architectury",
+            "version": "13.0.8",
+            "description": "Librairie intermédiaire indispensable pour de nombreux mods."
+        },
+        {
+            "name": "armourersworkshop",
+            "version": "3.2.7-beta",
+            "description": "Permet de créer ses propres skins d'armures et d'armes."
+        },
+        {
+            "name": "arsdelight",
+            "version": "2.1.9",
+            "description": "Compatibilité entre Ars Nouveau et Farmer's Delight."
+        },
+        {
+            "name": "ars_additions",
+            "version": "21.2.3",
+            "description": "Nouveaux sorts et contenus pour Ars Nouveau."
+        },
+        {
+            "name": "ars_creo",
+            "version": "5.1.0",
+            "description": "Intégration entre Ars Nouveau et Create."
+        },
+        {
+            "name": "ars_nouveau",
+            "version": "5.10.6",
+            "description": "Système de magie complet basé sur la création de sorts."
+        },
+        {
+            "name": "ars_ocultas",
+            "version": "2.2.0",
+            "description": "Intégration entre Ars Nouveau et Occultism."
+        },
+        {
+            "name": "ars_technica",
+            "version": "2.4.1",
+            "description": "Ajoute des gadgets magiques à Ars Nouveau."
+        },
+        {
+            "name": "artifacts",
+            "version": "13.1.0",
+            "description": "Ajoute des objets magiques puissants trouvables dans les donjons."
+        },
+        {
+            "name": "attributefix",
+            "version": "21.1.3",
+            "description": "Supprime les limites de calcul des attributs vanilla."
+        },
+        {
+            "name": "baguettelib",
+            "version": "1.1.5",
+            "description": "Librairie technique."
+        },
+        {
+            "name": "balm",
+            "version": "21.0.55",
+            "description": "Librairie technique requise pour Waystones."
+        },
+        {
+            "name": "barbequesdelight",
+            "version": "1.2.2",
+            "description": "Ajoute du contenu de barbecue à Farmer's Delight."
+        },
+        {
+            "name": "bellsandwhistles",
+            "version": "0.4.7",
+            "description": "Ajoute des blocs décoratifs liés à l'univers de Create."
+        },
+        {
+            "name": "betterarcheology",
+            "version": "1.3.4",
+            "description": "Améliore le système d'archéologie avec de nouveaux fossiles."
+        },
+        {
+            "name": "bettercombat",
+            "version": "2.3.1",
+            "description": "Refonte des animations et du système de combat."
+        },
+        {
+            "name": "BetterCopper",
+            "version": "1.3",
+            "description": "Améliore les objets et blocs en cuivre."
+        },
+        {
+            "name": "BetterF3",
+            "version": "11.0.3",
+            "description": "Rend le menu F3 plus clair et personnalisable."
+        },
+        {
+            "name": "betterfpsdist",
+            "version": "6.0",
+            "description": "Améliore les performances de rendu à distance."
+        },
+        {
+            "name": "BetterThirdPerson",
+            "version": "1.9.0",
+            "description": "Améliore la caméra à la troisième personne."
+        },
+        {
+            "name": "BiomesOPlenty",
+            "version": "21.1.0.13",
+            "description": "Ajoute des dizaines de nouveaux biomes."
+        },
+        {
+            "name": "bookshelf",
+            "version": "21.1.80",
+            "description": "Librairie technique pour de nombreux mods."
+        },
+        {
+            "name": "botanypots",
+            "version": "21.1.41",
+            "description": "Pots permettant de faire pousser des plantes de manière compacte."
+        },
+        {
+            "name": "botanytrees",
+            "version": "21.1.1",
+            "description": "Extension de Botany Pots pour les arbres."
+        },
+        {
+            "name": "BrewinAndChewin",
+            "version": "4.4.1",
+            "description": "Ajoute la fermentation et les boissons alcoolisées."
+        },
+        {
+            "name": "buildinggadgets2",
+            "version": "1.3.9",
+            "description": "Outils avancés pour la construction rapide."
+        },
+        {
+            "name": "burgermod",
+            "version": "2.10.3",
+            "description": "Ajoute des burgers et de la restauration rapide."
+        },
+        {
+            "name": "cable_facades",
+            "version": "1.6.4",
+            "description": "Permet de cacher les câbles avec des blocs décoratifs."
+        },
+        {
+            "name": "caelus",
+            "version": "7.0.1",
+            "description": "Gère les capacités de vol (Elytra) de manière technique."
+        },
+        {
+            "name": "carpetscore",
+            "version": "1.0.10",
+            "description": "Librairie technique pour les fonctionnalités de type 'Carpet'."
+        },
+        {
+            "name": "carryon",
+            "version": "2.2.2.11",
+            "description": "Permet de porter des coffres et des mobs avec les mains."
+        },
+        {
+            "name": "charginggadgets",
+            "version": "1.14.1",
+            "description": "Station de recharge pour les outils électriques."
+        },
+        {
+            "name": "charmofundying",
+            "version": "9.1.0",
+            "description": "Permet d'utiliser le Totem d'immortalité depuis un slot Curios."
+        },
+        {
+            "name": "chat_heads",
+            "version": "0.14.2",
+            "description": "Affiche la tête du joueur à côté de ses messages dans le chat."
+        },
+        {
+            "name": "chefsdelight",
+            "version": "1.0.5",
+            "description": "Ajoute des tenues et équipements de chef cuisinier."
+        },
+        {
+            "name": "choccos_mobs",
+            "version": "0.2.0",
+            "description": "Ajoute de nouvelles créatures hostiles ou pacifiques."
+        },
+        {
+            "name": "chunkactivitytracker",
+            "version": "1.0.1",
+            "description": "Outil d'administration pour surveiller l'activité des chunks."
+        },
+        {
+            "name": "Chunky",
+            "version": "1.4.23",
+            "description": "Permet de pré-générer la carte pour éviter le lag serveur."
+        },
+        {
+            "name": "clientcrafting",
+            "version": "1.8",
+            "description": "Optimise la gestion des crafts côté client."
+        },
+        {
+            "name": "cloth-config",
+            "version": "15.0.140",
+            "description": "Interface de configuration pour de nombreux mods."
+        },
+        {
+            "name": "collective",
+            "version": "8.13",
+            "description": "Librairie technique requise par de nombreux mods d'utilité."
+        },
+        {
+            "name": "colorfulhearts",
+            "version": "10.5.9",
+            "description": "Change l'apparence des cœurs de vie selon les effets."
+        },
+        {
+            "name": "comforts",
+            "version": "9.0.4",
+            "description": "Ajoute des sacs de couchage et des hamacs (pour dormir sans point de spawn)."
+        },
+        {
+            "name": "connectivity",
+            "version": "7.2",
+            "description": "Optimise les connexions réseau entre le client et le serveur."
+        },
+        {
+            "name": "construction_blocks",
+            "version": "b1.2",
+            "description": "Ajoute de nouveaux blocs dédiés à la construction."
+        },
+        {
+            "name": "copperdeco",
+            "version": "1.0.1",
+            "description": "Ajoute des décorations variées en cuivre."
+        },
+        {
+            "name": "copycats",
+            "version": "3.0.4",
+            "description": "Blocs qui prennent l'apparence d'autres blocs (pour Create)."
+        },
+        {
+            "name": "corn_delight",
+            "version": "1.1.8",
+            "description": "Ajoute la culture et les recettes à base de maïs."
+        },
+        {
+            "name": "coroutil",
+            "version": "1.3.8",
+            "description": "Librairie technique pour la gestion des entités."
+        },
+        {
+            "name": "corpse",
+            "version": "1.1.13",
+            "description": "Crée un cadavre à votre mort pour sécuriser votre inventaire."
+        },
+        {
+            "name": "corpsecurioscompat",
+            "version": "3.1.3",
+            "description": "Permet de retrouver les objets Curios dans son cadavre."
+        },
+        {
+            "name": "cosmeticarmorreworked",
+            "version": "v1",
+            "description": "Permet d'avoir une armure visuelle différente de l'armure portée."
+        },
+        {
+            "name": "CosmeticArmours",
+            "version": "1.5.3.1",
+            "description": "Alternative pour la gestion des armures esthétiques."
+        },
+        {
+            "name": "cosmeticcorpsecompat",
+            "version": "1.0.0",
+            "description": "Compatibilité cosmétique pour le système de cadavre."
+        },
+        {
+            "name": "CosmeticWeapons",
+            "version": "1.1.0.1",
+            "description": "Permet de changer l'apparence visuelle des armes."
+        },
+        {
+            "name": "crabbersdelight",
+            "version": "1.2.3",
+            "description": "Ajoute du contenu lié à la pêche aux crabes pour Farmer's Delight."
+        },
+        {
+            "name": "CraftPresence",
+            "version": "2.7.0",
+            "description": "Affiche votre activité Minecraft détaillée sur Discord."
+        },
+        {
+            "name": "cratedelight",
+            "version": "25.09.22",
+            "description": "Intègre des caisses de stockage pour Farmer's Delight."
+        },
+        {
+            "name": "Create Encased",
+            "version": "1.7.2-fix2",
+            "description": "Ajoute des blocs enrobés pour les mécanismes de Create."
+        },
+        {
+            "name": "create",
+            "version": "6.0.8",
+            "description": "Le mod principal d'automatisation mécanique."
+        },
+        {
+            "name": "create-central-kitchen",
+            "version": "2.2.6",
+            "description": "Intégration complète entre Create et Farmer's Delight."
+        },
+        {
+            "name": "create-confectionery",
+            "version": "1.1.2",
+            "description": "Ajoute de la confiserie et du chocolat automatisable avec Create."
+        },
+        {
+            "name": "create-dragons-plus",
+            "version": "1.8.5",
+            "description": "Ajoute du contenu lié aux dragons pour Create."
+        },
+        {
+            "name": "create-enchantment-industry",
+            "version": "2.2.5b",
+            "description": "Permet d'automatiser l'enchantement avec des fluides (Expérience)."
+        },
+        {
+            "name": "create-integrated-farming",
+            "version": "1.2.0c",
+            "description": "Automatisation avancée de l'agriculture avec Create."
+        },
+        {
+            "name": "create-stuff-additions",
+            "version": "2.1.0e",
+            "description": "Ajoute divers outils et blocs utilitaires pour Create."
+        },
+        {
+            "name": "createaddition",
+            "version": "1.5.9",
+            "description": "Liaison entre Create et l'énergie électrique (Forge Energy)."
+        },
+        {
+            "name": "createcontraptionterminals",
+            "version": "1.2.0",
+            "description": "Ajoute des terminaux pour contrôler les machines mobiles."
+        },
+        {
+            "name": "createdieselgenerators",
+            "version": "1.3.8",
+            "description": "Ajoute des moteurs diesel et du pétrole pour Create."
+        },
+        {
+            "name": "createendertransmission",
+            "version": "2.1.1",
+            "description": "Permet de transférer de l'énergie et des items via l'Ender avec Create."
+        },
+        {
+            "name": "createfood",
+            "version": "2.0.0a",
+            "description": "Ajoute de nouvelles recettes de cuisine automatisables."
+        },
+        {
+            "name": "createframed",
+            "version": "1.7.1",
+            "description": "Blocs décoratifs structurés pour Create."
+        },
+        {
+            "name": "creategoggles",
+            "version": "6.1.1",
+            "description": "Améliore l'interface des lunettes d'ingénieur."
+        },
+        {
+            "name": "createnuclear",
+            "version": "1.3.2-beta.3",
+            "description": "Ajoute la gestion du nucléaire et des réacteurs pour Create."
+        },
+        {
+            "name": "CreateNumismatics",
+            "version": "1.0.19",
+            "description": "Système de monnaie et d'économie intégré à Create."
+        },
+        {
+            "name": "createoreexcavation",
+            "version": "1.6.8",
+            "description": "Ajoute des foreuses géantes pour extraire des ressources infinies."
+        },
+        {
+            "name": "create_aquatic_ambitions",
+            "version": "2.0.2",
+            "description": "Addon Create axé sur le contenu sous-marin."
+        },
+        {
+            "name": "create_connected",
+            "version": "1.1.10",
+            "description": "Ajoute des blocs et des chaînes de transmission connectés."
+        },
+        {
+            "name": "create_copper_and_zinc",
+            "version": "1.6.5",
+            "description": "Améliore l'obtention du cuivre et du zinc."
+        },
+        {
+            "name": "create_cuisine",
+            "version": "1.0.0",
+            "description": "Nouvelles mécaniques de cuisine mécanique."
+        },
+        {
+            "name": "create_easy_structures",
+            "version": "0.2a",
+            "description": "Aide à la génération de structures via Create."
+        },
+        {
+            "name": "create_hypertube",
+            "version": "0.3.0",
+            "description": "Système de transport rapide par tubes pneumatiques."
+        },
+        {
+            "name": "create_jetpack",
+            "version": "5.1.2",
+            "description": "Ajoute un jetpack fonctionnant avec de l'air comprimé."
+        },
+        {
+            "name": "create_ltab",
+            "version": "3.5.0",
+            "description": "Extension technique pour Create."
+        },
+        {
+            "name": "create_mechanical_extruder",
+            "version": "2.2.0",
+            "description": "Ajoute une machine pour générer des blocs (pierre, etc.)."
+        },
+        {
+            "name": "create_oxidized",
+            "version": "0.1.3",
+            "description": "Mécanique d'oxydation pour les blocs de Create."
+        },
+        {
+            "name": "create_structures_arise",
+            "version": "168.41.40",
+            "description": "Intègre des structures complexes utilisant Create."
+        },
+        {
+            "name": "create_things_and_misc",
+            "version": "4.0",
+            "description": "Collection de divers objets et blocs pour Create."
+        },
+        {
+            "name": "create_ultimate_factory",
+            "version": "2.2.2",
+            "description": "Ajoute des outils pour la création d'usines massives."
+        },
+        {
+            "name": "create_waystones_recipes",
+            "version": "3.0.1",
+            "description": "Permet de crafter des Waystones via les machines de Create."
+        },
+        {
+            "name": "create_winery",
+            "version": "1.9.0",
+            "description": "Permet de créer du vin de manière automatisée."
+        },
+        {
+            "name": "CreativeCore",
+            "version": "2.13.23",
+            "description": "Librairie technique indispensable pour les mods de sons et d'interface."
+        },
+        {
+            "name": "cristellib",
+            "version": "3.0.2.1",
+            "description": "Librairie technique pour la gestion des structures."
+        },
+        {
+            "name": "critterarmory",
+            "version": "0.6.3",
+            "description": "Ajoute des équipements pour les petites créatures."
+        },
+        {
+            "name": "cuisinedelight",
+            "version": "1.2.6",
+            "description": "Addon de cuisine pour Farmer's Delight."
+        },
+        {
+            "name": "culturaldelights",
+            "version": "0.17.7",
+            "description": "Ajoute de la nourriture inspirée de diverses cultures."
+        },
+        {
+            "name": "cupboard",
+            "version": "2.9",
+            "description": "Librairie technique pour la gestion des données."
+        },
+        {
+            "name": "curios-neoforge",
+            "version": "9.5.1",
+            "description": "Mod permettant d'avoir des slots d'équipement supplémentaires (bagues, etc.)."
+        },
+        {
+            "name": "customizableelytra",
+            "version": "2.2.8",
+            "description": "Permet de personnaliser l'apparence des Elytras."
+        },
+        {
+            "name": "deeperdarker",
+            "version": "1.3.5",
+            "description": "Ajoute la dimension 'Otherside' liée à l'Ancient City."
+        },
+        {
+            "name": "deep_aether",
+            "version": "1.1.4",
+            "description": "Extension de la dimension Aether avec du contenu profond."
+        },
+        {
+            "name": "defaultoptions",
+            "version": "21.1.5",
+            "description": "Permet aux créateurs de pack de définir des options par défaut."
+        },
+        {
+            "name": "Design-n-Decor",
+            "version": "2.1.0",
+            "description": "Ajoute de nombreux blocs de décoration industrielle."
+        },
+        {
+            "name": "DnDesires",
+            "version": "2.2d",
+            "description": "Ajoute du contenu inspiré des jeux de rôle (Donjons et Dragons)."
+        },
+        {
+            "name": "does_it_tick",
+            "version": "1.1.4",
+            "description": "Utilitaire pour vérifier les performances de tick des entités."
+        },
+        {
+            "name": "doubledoors",
+            "version": "7.2",
+            "description": "Permet d'ouvrir deux portes simultanément en un clic."
+        },
+        {
+            "name": "dragondropselytra",
+            "version": "3.5",
+            "description": "L'Ender Dragon laisse tomber des Elytras à sa mort."
+        },
+        {
+            "name": "drippyloadingscreen",
+            "version": "3.1.0",
+            "description": "Permet de personnaliser l'écran de chargement du jeu."
+        },
+        {
+            "name": "dummmmmmy",
+            "version": "2.0.11",
+            "description": "Ajoute des mannequins d'entraînement pour tester les dégâts."
+        },
+        {
+            "name": "DungeonsArise",
+            "version": "2.1.68",
+            "description": "Génère d'immenses donjons et structures complexes."
+        },
+        {
+            "name": "DungeonsAriseSevenSeas",
+            "version": "1.0.4",
+            "description": "Ajoute des navires et structures maritimes pour Dungeons Arise."
+        },
+        {
+            "name": "durabilitytooltip",
+            "version": "1.1.6",
+            "description": "Affiche la durabilité exacte sur les outils et armures."
+        },
+        {
+            "name": "DustyDecorations",
+            "version": "V1.10.1",
+            "description": "Ajoute des décorations d'intérieur et d'extérieur."
+        },
+        {
+            "name": "easy_npc",
+            "version": "5.9.0",
+            "description": "Permet de créer et configurer facilement des PNJ personnalisés."
+        },
+        {
+            "name": "ecologics",
+            "version": "2.3.1",
+            "description": "Améliore les biomes vanilla avec de nouveaux animaux et blocs."
+        },
+        {
+            "name": "elevatorid",
+            "version": "1.11.4",
+            "description": "Ajoute des blocs d'ascenseurs simples (téléportation verticale)."
+        },
+        {
+            "name": "elytraslot",
+            "version": "9.0.2",
+            "description": "Ajoute un slot spécifique pour l'Elytra dans l'inventaire."
+        },
+        {
+            "name": "Emojiful",
+            "version": "5.2.1",
+            "description": "Permet d'utiliser des emojis dans le chat."
+        },
+        {
+            "name": "emotecraft",
+            "version": "2.4.12",
+            "description": "Permet d'effectuer des animations d'émotes avec le joueur."
+        },
+        {
+            "name": "enchdesc",
+            "version": "21.1.9",
+            "description": "Affiche la description des enchantements dans les info-bulles."
+        },
+        {
+            "name": "endersdelight",
+            "version": "1.1.0",
+            "description": "Contenu de cuisine Farmer's Delight basé sur l'Ender."
+        },
+        {
+            "name": "ends_delight",
+            "version": "2.5.1",
+            "description": "Extension culinaire pour la dimension de l'End."
+        },
+        {
+            "name": "entityculling",
+            "version": "1.9.4",
+            "description": "Cache les entités non visibles pour augmenter les FPS."
+        },
+        {
+            "name": "escalated",
+            "version": "1.2.0",
+            "description": "Ajoute du contenu d'escalade et de mobilité pour Create."
+        },
+        {
+            "name": "exposure",
+            "version": "1.9.12",
+            "description": "Système complet de photographie avec développement de pellicules."
+        },
+        {
+            "name": "exposure_catalog",
+            "version": "1.1.1",
+            "description": "Album pour ranger ses photos."
+        },
+        {
+            "name": "exposure_expanded",
+            "version": "1.0.1",
+            "description": "Contenu additionnel pour le mod Exposure."
+        },
+        {
+            "name": "exposure_polaroid",
+            "version": "1.1.2",
+            "description": "Ajoute un appareil photo instantané (Polaroid)."
+        },
+        {
+            "name": "ExtremeSoundMuffler",
+            "version": "3.51",
+            "description": "Permet de couper ou réduire certains sons spécifiques du jeu."
+        },
+        {
+            "name": "FallingTree",
+            "version": "1.21.1.11",
+            "description": "Permet de couper un arbre entier en cassant un seul bloc."
+        },
+        {
+            "name": "fancy-entity-renderer",
+            "version": "0.4.3",
+            "description": "Améliore le rendu visuel des entités."
+        },
+        {
+            "name": "fancymenu",
+            "version": "3.8.1",
+            "description": "Permet de personnaliser entièrement le menu principal du jeu."
+        },
+        {
+            "name": "FarmersDelight",
+            "version": "1.2.9",
+            "description": "Mod majeur d'agriculture et de cuisine."
+        },
+        {
+            "name": "farmersknives",
+            "version": "4.1.0",
+            "description": "Ajoute des couteaux de cuisine pour tous les matériaux de mods."
+        },
+        {
+            "name": "farsight",
+            "version": "4.5",
+            "description": "Permet de voir plus loin que la Render Distance du serveur."
+        },
+        {
+            "name": "fastboot",
+            "version": "v1.3neo",
+            "description": "Accélère le démarrage du jeu."
+        },
+        {
+            "name": "FastFurnace",
+            "version": "9.0.1",
+            "description": "Optimise les performances des fours pour réduire le lag."
+        },
+        {
+            "name": "fastpaintings",
+            "version": "1.3.0",
+            "description": "Optimise le rendu des tableaux."
+        },
+        {
+            "name": "FastSuite",
+            "version": "6.0.5",
+            "description": "Optimise le traitement des recettes par le serveur."
+        },
+        {
+            "name": "FastWorkbench",
+            "version": "9.1.3",
+            "description": "Optimise l'interface de l'établi pour éviter les ralentissements."
+        },
+        {
+            "name": "ferritecore",
+            "version": "7.0.2",
+            "description": "Réduit drastiquement l'usage de la mémoire RAM."
+        },
+        {
+            "name": "FluxNetworks",
+            "version": "8.0.0",
+            "description": "Système de transfert d'énergie sans fil et stockage global."
+        },
+        {
+            "name": "ForgeConfigAPIPort",
+            "version": "v21.1.6",
+            "description": "Permet la compatibilité des configurations entre versions."
+        },
+        {
+            "name": "forgified-fabric-api",
+            "version": "0.115.6",
+            "description": "Permet de faire tourner certains mods Fabric sur NeoForge."
+        },
+        {
+            "name": "FramedBlocks",
+            "version": "10.5.1",
+            "description": "Blocs dont on peut changer la forme (pentes, coins, etc.)."
+        },
+        {
+            "name": "framework",
+            "version": "0.13.6",
+            "description": "Librairie technique pour la création de mods."
+        },
+        {
+            "name": "ftb-chunks",
+            "version": "2101.1.13",
+            "description": "Permet de protéger des zones et d'avoir une carte."
+        },
+        {
+            "name": "ftb-essentials",
+            "version": "2101.1.8",
+            "description": "Commandes de base (/tp, /home, /spawn) pour serveur."
+        },
+        {
+            "name": "ftb-filter-system",
+            "version": "21.1.3",
+            "description": "Système de filtrage d'items avancé pour FTB."
+        },
+        {
+            "name": "ftb-jei-extras",
+            "version": "21.1.7",
+            "description": "Ajoute des fonctionnalités de tri FTB dans JEI."
+        },
+        {
+            "name": "ftb-library",
+            "version": "2101.1.29",
+            "description": "Librairie de base pour tous les mods FTB."
+        },
+        {
+            "name": "ftb-quests",
+            "version": "2101.1.20",
+            "description": "Système de quêtes interactives pour le modpack."
+        },
+        {
+            "name": "ftb-ranks",
+            "version": "2101.1.3",
+            "description": "Gère les grades et permissions des joueurs sur le serveur."
+        },
+        {
+            "name": "ftb-teams",
+            "version": "2101.1.8",
+            "description": "Permet de créer des équipes de joueurs."
+        },
+        {
+            "name": "ftb-xmod-compat",
+            "version": "21.1.6",
+            "description": "Gère les compatibilités entre mods via FTB."
+        },
+        {
+            "name": "fusion",
+            "version": "1.2.11c",
+            "description": "Librairie pour la gestion des textures connectées."
+        },
+        {
+            "name": "fzzy_config",
+            "version": "0.7.4",
+            "description": "Librairie de configuration."
+        },
+        {
+            "name": "geckolib",
+            "version": "4.8.2",
+            "description": "Librairie d'animations complexe pour les entités."
+        },
+        {
+            "name": "GlitchCore",
+            "version": "2.1.0.0",
+            "description": "Librairie technique pour les mods de Glitchfiend."
+        },
+        {
+            "name": "goatduloat",
+            "version": "2.2.2",
+            "description": "Ajoute du contenu lié aux chèvres."
+        },
+        {
+            "name": "gpumemleakfix",
+            "version": "1.8",
+            "description": "Répare des fuites de mémoire liées à la carte graphique."
+        },
+        {
+            "name": "guardvillagers",
+            "version": "2.4.5",
+            "description": "Ajoute des villageois gardes qui protègent le village."
+        },
+        {
+            "name": "handcrafted",
+            "version": "4.0.3",
+            "description": "Magnifique mod de mobilier en bois sculpté."
+        },
+        {
+            "name": "hiddennames",
+            "version": "1.0.6",
+            "description": "Permet de cacher les noms des joueurs au-dessus de leur tête."
+        },
+        {
+            "name": "Highlighter",
+            "version": "1.1.11",
+            "description": "Met en surbrillance les nouveaux objets dans l'inventaire."
+        },
+        {
+            "name": "Iceberg",
+            "version": "1.3.2",
+            "description": "Librairie technique pour les mods d'interface."
+        },
+        {
+            "name": "ImmediatelyFast",
+            "version": "1.6.9",
+            "description": "Optimise le rendu de l'interface utilisateur pour plus de FPS."
+        },
+        {
+            "name": "ImmersiveEngineering",
+            "version": "12.4.2",
+            "description": "Mod technologique réaliste (électricité, machines multiblocs)."
+        },
+        {
+            "name": "ImmersiveUI",
+            "version": "0.3.3",
+            "description": "Améliore visuellement l'interface utilisateur."
+        },
+        {
+            "name": "immersive_aircraft",
+            "version": "1.4.1",
+            "description": "Ajoute des véhicules aériens (avions, gyrocoptères)."
+        },
+        {
+            "name": "immersive_paintings",
+            "version": "0.7.4",
+            "description": "Permet d'importer ses propres images comme tableaux en jeu."
+        },
+        {
+            "name": "incontrol",
+            "version": "10.2.5",
+            "description": "Permet aux admins de contrôler précisément le spawn des mobs."
+        },
+        {
+            "name": "invocore",
+            "version": "5.2.4",
+            "description": "Librairie technique."
+        },
+        {
+            "name": "iris-flywheel-compat",
+            "version": "2.0.5",
+            "description": "Compatibilité entre les shaders (Iris) et Create (Flywheel)."
+        },
+        {
+            "name": "iris-neoforge",
+            "version": "1.8.12",
+            "description": "Permet d'utiliser des shaders sur NeoForge."
+        },
+        {
+            "name": "irons_spellbooks",
+            "version": "3.14.8",
+            "description": "Mod de magie complet avec sorts, grimoires et boss."
+        },
+        {
+            "name": "ItemBorders",
+            "version": "1.2.5",
+            "description": "Ajoute des bordures de couleur selon la rareté des items."
+        },
+        {
+            "name": "itemcollectors",
+            "version": "1.1.10",
+            "description": "Ajoute des blocs pour aspirer les items au sol."
+        },
+        {
+            "name": "Jade",
+            "version": "15.10.3",
+            "description": "Affiche les informations sur le bloc ou l'entité regardé (WAILA)."
+        },
+        {
+            "name": "JadeAddons",
+            "version": "6.1.0",
+            "description": "Ajoute des informations spécifiques de mods dans Jade."
+        },
+        {
+            "name": "jamlib",
+            "version": "1.3.5",
+            "description": "Librairie technique."
+        },
+        {
+            "name": "javd",
+            "version": "9.0.0",
+            "description": "Ajoute une dimension 'Just Another Void Dimension'."
+        },
+        {
+            "name": "jearchaeology",
+            "version": "1.1.6",
+            "description": "Intégration de l'archéologie dans JEI."
+        },
+        {
+            "name": "jeed",
+            "version": "2.3.2",
+            "description": "Affiche les effets de potion dans JEI."
+        },
+        {
+            "name": "jei",
+            "version": "19.25.1.332",
+            "description": "Just Enough Items - Affiche tous les objets et leurs recettes."
+        },
+        {
+            "name": "justenoughbreeding",
+            "version": "1.6.2",
+            "description": "Affiche les nourritures de reproduction dans JEI."
+        },
+        {
+            "name": "JustEnoughProfessions",
+            "version": "4.0.4",
+            "description": "Affiche les métiers des villageois dans JEI."
+        },
+        {
+            "name": "JustEnoughResources",
+            "version": "1.6.0.17",
+            "description": "Affiche les taux de drop et minerais dans JEI."
+        },
+        {
+            "name": "justzoom",
+            "version": "2.1.0",
+            "description": "Ajoute une touche de zoom (comme Optifine)."
+        },
+        {
+            "name": "kjsbotanypots",
+            "version": "1.3.2",
+            "description": "Intégration de KubeJS pour Botany Pots."
+        },
+        {
+            "name": "knightlib",
+            "version": "1.3.0",
+            "description": "Librairie technique pour les mods de combat."
+        },
+        {
+            "name": "knightquest",
+            "version": "1.9.0",
+            "description": "Ajoute des quêtes et des armures de chevaliers."
+        },
+        {
+            "name": "konkrete",
+            "version": "1.9.9",
+            "description": "Librairie technique pour les interfaces."
+        },
+        {
+            "name": "kotlinforforge",
+            "version": "5.10.0",
+            "description": "Permet l'utilisation du langage Kotlin pour les mods."
+        },
+        {
+            "name": "kubejs-create",
+            "version": "2101.3.1",
+            "description": "Permet de scripter des recettes pour Create."
+        },
+        {
+            "name": "kubejs-mekanism",
+            "version": "2101.1.7",
+            "description": "Permet de scripter des recettes pour Mekanism."
+        },
+        {
+            "name": "kubejs-neoforge",
+            "version": "2101.7.2",
+            "description": "Le mod de base pour modifier le jeu via scripts."
+        },
+        {
+            "name": "kubejsarsnouveau",
+            "version": "1.3.2",
+            "description": "Intégration KubeJS pour Ars Nouveau."
+        },
+        {
+            "name": "kubejsdelight",
+            "version": "1.1.4",
+            "description": "Intégration KubeJS pour Farmer's Delight."
+        },
+        {
+            "name": "kubejstweaks",
+            "version": "1.0.5",
+            "description": "Diverses optimisations pour KubeJS."
+        },
+        {
+            "name": "letmedespawn",
+            "version": "1.5.0",
+            "description": "Force le despawn des mobs passifs pour alléger le serveur."
+        },
+        {
+            "name": "logbegone",
+            "version": "1.0.3",
+            "description": "Permet de masquer certains messages d'erreur inutiles dans la console."
+        },
+        {
+            "name": "LongerChatHistory",
+            "version": "1.7",
+            "description": "Permet de voir plus de messages anciens dans le chat."
+        },
+        {
+            "name": "lootintegrations",
+            "version": "4.7",
+            "description": "Gère les tables de loot entre différents mods."
+        },
+        {
+            "name": "lootjs",
+            "version": "3.6.0",
+            "description": "Permet de modifier les tables de loot via JavaScript."
+        },
+        {
+            "name": "lootr",
+            "version": "1.10.35",
+            "description": "Chaque joueur a son propre loot dans les coffres de donjon."
+        },
+        {
+            "name": "man_of_many_planes",
+            "version": "0.2.1",
+            "description": "Addon d'aviation pour Immersive Aircraft."
+        },
+        {
+            "name": "mcw-bridges",
+            "version": "3.1.1",
+            "description": "Ajoute de nombreux styles de ponts."
+        },
+        {
+            "name": "mcw-doors",
+            "version": "1.1.2",
+            "description": "Ajoute une grande variété de portes."
+        },
+        {
+            "name": "mcw-furniture",
+            "version": "3.4.1",
+            "description": "Ajoute du mobilier varié pour la décoration."
+        },
+        {
+            "name": "mcw-holidays",
+            "version": "1.1.2",
+            "description": "Décorations de fêtes (Noël, etc.)."
+        },
+        {
+            "name": "mcw-lights",
+            "version": "1.1.5",
+            "description": "Ajoute des lampes, lanternes et éclairages modernes."
+        },
+        {
+            "name": "mcw-mcwfences",
+            "version": "1.2.1",
+            "description": "Ajoute des barrières et portillons stylisés."
+        },
+        {
+            "name": "mcw-mcwpaths",
+            "version": "1.1.1",
+            "description": "Ajoute des blocs de sentiers et de chemins."
+        },
+        {
+            "name": "mcw-mcwstairs",
+            "version": "1.0.2",
+            "description": "Ajoute des variantes d'escaliers."
+        },
+        {
+            "name": "mcw-mcwwindows",
+            "version": "2.4.2",
+            "description": "Ajoute des fenêtres et volets personnalisables."
+        },
+        {
+            "name": "mcw-paintings",
+            "version": "1.0.5",
+            "description": "Ajoute de nouveaux tableaux."
+        },
+        {
+            "name": "mcw-roofs",
+            "version": "2.3.2",
+            "description": "Permet de créer de vrais toits avec des pentes."
+        },
+        {
+            "name": "mcw-trapdoors",
+            "version": "1.1.5",
+            "description": "Ajoute de nombreuses trappes décoratives."
+        },
+        {
+            "name": "mcwbiomesoplenty",
+            "version": "1.4",
+            "description": "Compatibilité Macaw's pour les bois de Biomes O' Plenty."
+        },
+        {
+            "name": "mechanicals",
+            "version": "1.1.0",
+            "description": "Addon technique pour les systèmes mécaniques."
+        },
+        {
+            "name": "mechanical_botany",
+            "version": "1.0.9",
+            "description": "Intégration entre la botanique et Create."
+        },
+        {
+            "name": "Mekanism",
+            "version": "10.7.17",
+            "description": "Mod technologique majeur (usines, minerais, énergie)."
+        },
+        {
+            "name": "MekanismGenerators",
+            "version": "10.7.17",
+            "description": "Ajoute des générateurs d'énergie avancés pour Mekanism."
+        },
+        {
+            "name": "MekanismTools",
+            "version": "10.7.17",
+            "description": "Ajoute des outils et armures basés sur les métaux de Mekanism."
+        },
+        {
+            "name": "melody",
+            "version": "1.0.10",
+            "description": "Librairie pour la gestion de la musique et des sons."
+        },
+        {
+            "name": "mimimod",
+            "version": "4.3.0",
+            "description": "Permet de jouer des instruments de musique en jeu."
+        },
+        {
+            "name": "modelfix",
+            "version": "1.10",
+            "description": "Corrige des erreurs de modèles 3D."
+        },
+        {
+            "name": "modernfix",
+            "version": "5.25.1",
+            "description": "Optimisation globale massive du jeu et des temps de chargement."
+        },
+        {
+            "name": "modonomicon",
+            "version": "1.117.2",
+            "description": "Système de livres-guides interactifs pour les mods."
+        },
+        {
+            "name": "MoogsEndStructures",
+            "version": "2.0.0",
+            "description": "Ajoute de nouvelles structures dans l'End."
+        },
+        {
+            "name": "MoogsNetherStructures",
+            "version": "2.0.31",
+            "description": "Ajoute de nouvelles structures dans le Nether."
+        },
+        {
+            "name": "MoogsVoyagerStructures",
+            "version": "5.0.3",
+            "description": "Ajoute de grandes structures d'exploration dans l'Overworld."
+        },
+        {
+            "name": "moonlight",
+            "version": "2.28.2",
+            "description": "Librairie technique indispensable pour Supplementaries."
+        },
+        {
+            "name": "moredragoneggs",
+            "version": "5.0",
+            "description": "Permet d'obtenir plus d'un œuf de dragon."
+        },
+        {
+            "name": "MouseTweaks",
+            "version": "2.26.1",
+            "description": "Améliore la gestion de l'inventaire avec la souris."
+        },
+        {
+            "name": "mowziesmobs",
+            "version": "1.7.5",
+            "description": "Ajoute des boss et créatures avec des animations de haute qualité."
+        },
+        {
+            "name": "MutantMonsters",
+            "version": "21.1.1",
+            "description": "Ajoute des versions mutantes et géantes des mobs classiques."
+        },
+        {
+            "name": "MyNethersDelight",
+            "version": "1.9",
+            "description": "Contenu de cuisine Farmer's Delight pour le Nether."
+        },
+        {
+            "name": "NaturesCompass",
+            "version": "3.0.3",
+            "description": "Boussole permettant de localiser n'importe quel biome."
+        },
+        {
+            "name": "neoncraft",
+            "version": "1.1.1",
+            "description": "Ajoute des blocs de néon colorés."
+        },
+        {
+            "name": "netherportalfix",
+            "version": "21.1.1",
+            "description": "Corrige les problèmes de destination des portails du Nether."
+        },
+        {
+            "name": "NoChatReports",
+            "version": "v2.9.1",
+            "description": "Désactive le système de signalement de chat de Microsoft."
+        },
+        {
+            "name": "notenoughanimations",
+            "version": "1.11.1",
+            "description": "Ajoute des animations à la troisième personne (manger, boire, etc.)."
+        },
+        {
+            "name": "observable",
+            "version": "5.4.4",
+            "description": "Outil de diagnostic pour trouver les blocs qui causent du lag."
+        },
+        {
+            "name": "occultism",
+            "version": "1.199.0",
+            "description": "Mod de magie basé sur l'invocation de démons."
+        },
+        {
+            "name": "oceansdelight",
+            "version": "1.0.3",
+            "description": "Contenu culinaire basé sur les produits de la mer."
+        },
+        {
+            "name": "OctoLib",
+            "version": "0.6.0.4",
+            "description": "Librairie technique."
+        },
+        {
+            "name": "owo-lib",
+            "version": "0.12.15.5",
+            "description": "Librairie technique pour les interfaces."
+        },
+        {
+            "name": "ParCool",
+            "version": "3.4.2.0",
+            "description": "Ajoute des mouvements de parkour (grimper, roulades)."
+        },
+        {
+            "name": "Patchouli",
+            "version": "92",
+            "description": "Librairie permettant de créer des guides et manuels en jeu."
+        },
+        {
+            "name": "Pehkui",
+            "version": "3.8.3",
+            "description": "Permet de changer la taille des joueurs et des entités."
+        },
+        {
+            "name": "PickUpNotifier",
+            "version": "21.1.1",
+            "description": "Affiche les objets ramassés au-dessus de la barre d'inventaire."
+        },
+        {
+            "name": "pipeorgans",
+            "version": "0.8.2",
+            "description": "Ajoute des orgues fonctionnels au jeu."
+        },
+        {
+            "name": "Placebo",
+            "version": "9.9.1",
+            "description": "Librairie technique pour les mods de Shadows_of_Fire."
+        },
+        {
+            "name": "player-animation-lib",
+            "version": "2.0.1",
+            "description": "Librairie technique pour les animations de joueur."
+        },
+        {
+            "name": "Prism",
+            "version": "1.0.11",
+            "description": "Ajoute des effets visuels et colorés."
+        },
+        {
+            "name": "PuzzlesLib",
+            "version": "21.1.39",
+            "description": "Librairie technique pour les mods de Fuzs."
+        },
+        {
+            "name": "rechiseled",
+            "version": "1.1.6a",
+            "description": "Permet de changer la texture des blocs de construction."
+        },
+        {
+            "name": "rechiseledcreate",
+            "version": "1.0.2a",
+            "description": "Compatibilité entre Rechiseled et Create."
+        },
+        {
+            "name": "reeses-sodium-options",
+            "version": "1.8.3",
+            "description": "Améliore l'interface des options de Sodium."
+        },
+        {
+            "name": "refinedstorage",
+            "version": "2.0.0",
+            "description": "Mod de stockage numérique par réseau et disques durs."
+        },
+        {
+            "name": "refurbished_furniture",
+            "version": "1.0.20",
+            "description": "Collection de mobilier moderne de haute qualité."
+        },
+        {
+            "name": "revive_me",
+            "version": "5.4.8",
+            "description": "Permet d'être réanimé par un allié après être tombé à terre."
+        },
+        {
+            "name": "rightclickharvest",
+            "version": "4.6.0",
+            "description": "Permet de récolter et replanter d'un clic droit."
+        },
+        {
+            "name": "screenshot-to-clipboard",
+            "version": "1.0.10",
+            "description": "Copie automatiquement vos captures d'écran dans le presse-papier."
+        },
+        {
+            "name": "SecurityCraft",
+            "version": "v1.10.1",
+            "description": "Ajoute des caméras, lasers et blocs protégés par code."
+        },
+        {
+            "name": "selfexpression",
+            "version": "(Série)",
+            "description": "Ajoute des animations et poses pour le joueur."
+        },
+        {
+            "name": "simplehats",
+            "version": "0.4.0",
+            "description": "Ajoute de nombreux chapeaux cosmétiques amusants."
+        },
+        {
+            "name": "simplyswords",
+            "version": "1.62.0",
+            "description": "Ajoute une grande variété d'armes avec des capacités spéciales."
+        },
+        {
+            "name": "sit",
+            "version": "1.4",
+            "description": "Permet de s'asseoir sur les dalles et les escaliers."
+        },
+        {
+            "name": "skinrestorer",
+            "version": "2.4.3",
+            "description": "Permet aux joueurs d'afficher leur skin sur les serveurs offline."
+        },
+        {
+            "name": "sliceanddice",
+            "version": "4.2.2",
+            "description": "Addon Create pour l'automatisation de la cuisine."
+        },
+        {
+            "name": "SmartBrainLib",
+            "version": "1.16.11",
+            "description": "Librairie technique pour l'intelligence artificielle."
+        },
+        {
+            "name": "sodium-neoforge",
+            "version": "0.6.13",
+            "description": "Mod d'optimisation graphique majeur."
+        },
+        {
+            "name": "sophisticatedbackpacks",
+            "version": "3.25.18",
+            "description": "Sacs à dos améliorables avec de nombreux modules."
+        },
+        {
+            "name": "sophisticatedstorage",
+            "version": "1.5.17",
+            "description": "Coffres et barils améliorables (stockage massif)."
+        },
+        {
+            "name": "sound-physics-remastered",
+            "version": "1.5.1",
+            "description": "Ajoute de la réverbération et de l'écho aux sons selon l'environnement."
+        },
+        {
+            "name": "spark",
+            "version": "1.10.124",
+            "description": "Outil de diagnostic pour analyser les performances du serveur."
+        },
+        {
+            "name": "spawnanimations",
+            "version": "v1.11.3",
+            "description": "Ajoute des animations de sortie de terre lors du spawn des mobs."
+        },
+        {
+            "name": "Spice of Life Onion",
+            "version": "v1.5.3",
+            "description": "Encourage la diversité alimentaire en donnant des bonus de vie."
+        },
+        {
+            "name": "spyglass_improvements",
+            "version": "1.5.7",
+            "description": "Améliore l'utilisation de la longue-vue."
+        },
+        {
+            "name": "Structory",
+            "version": "v1.3.12",
+            "description": "Améliore la génération du monde avec de nouvelles ruines et structures."
+        },
+        {
+            "name": "supplementaries",
+            "version": "3.5.13",
+            "description": "Ajoute des dizaines de blocs et objets utilitaires interactifs."
+        },
+        {
+            "name": "TerraBlender",
+            "version": "4.1.0.8",
+            "description": "Librairie pour la gestion des biomes personnalisés."
+        },
+        {
+            "name": "tfmg",
+            "version": "1.1.1",
+            "description": "'The Factory Must Grow' - Addon industriel pour Create."
+        },
+        {
+            "name": "titanium",
+            "version": "4.0.37",
+            "description": "Librairie technique."
+        },
+        {
+            "name": "toms_storage",
+            "version": "2.2.3",
+            "description": "Système de stockage réseau simple et sans énergie."
+        },
+        {
+            "name": "torchmaster",
+            "version": "21.1.9",
+            "description": "Ajoute des torches géantes empêchant le spawn des mobs dans une large zone."
+        },
+        {
+            "name": "twilightforest",
+            "version": "4.7.3196",
+            "description": "La dimension mythique de la forêt du crépuscule."
+        },
+        {
+            "name": "UndergroundBunkers",
+            "version": "1.0.4",
+            "description": "Ajoute des bunkers secrets à explorer sous terre."
+        },
+        {
+            "name": "voicechat",
+            "version": "2.6.9",
+            "description": "Chat vocal de proximité pour parler avec les autres joueurs en jeu."
+        },
+        {
+            "name": "waystones",
+            "version": "21.1.25",
+            "description": "Permet de se téléporter entre des stèles activées."
+        },
+        {
+            "name": "worldedit",
+            "version": "7.3.8",
+            "description": "Outil d'édition de terrain massif pour les administrateurs."
+        },
+        {
+            "name": "xptome",
+            "version": "2.4",
+            "description": "Permet de stocker ses points d'expérience dans un livre."
+        }
+    ]
+}
