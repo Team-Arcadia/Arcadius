@@ -12,7 +12,7 @@ const SERVERS = [
     { host: '51.210.178.102', port: 25565 }
 ];
 
-const QUERY_TIMEOUT = 120000; // 120 secondes (2 minutes)
+const QUERY_TIMEOUT = 10000; // 10 secondes timeout par serveur
 
 /**
  * Writes a VarInt to a buffer and returns the bytes.
@@ -60,6 +60,30 @@ function buildPingPacket(host, port) {
 }
 
 /**
+ * Reads a VarInt from buffer starting at offset, returns {value, newOffset}
+ * @param {Buffer} buffer
+ * @param {number} offset
+ * @returns {{value: number, newOffset: number} | null}
+ */
+function readVarInt(buffer, offset) {
+    let value = 0;
+    let shift = 0;
+    let i = 0;
+
+    while (i < 5 && offset + i < buffer.length) {
+        const byte = buffer[offset + i];
+        value |= (byte & 0x7F) << shift;
+        i++;
+        if ((byte & 0x80) === 0) {
+            return { value, newOffset: offset + i };
+        }
+        shift += 7;
+    }
+
+    return null; // Not enough data
+}
+
+/**
  * Fetches online player count from a single Minecraft server.
  * @param {string} host
  * @param {number} port
@@ -92,53 +116,46 @@ function getPlayerCount(host, port) {
 
             try {
                 // Read packet length VarInt
-                let offset = 0;
-                let packetLen = 0;
-                let shift = 0;
-                while (offset < buffer.length) {
-                    const byte = buffer[offset++];
-                    packetLen |= (byte & 0x7F) << shift;
-                    shift += 7;
-                    if ((byte & 0x80) === 0) break;
-                }
+                const packetLenResult = readVarInt(buffer, 0);
+                if (!packetLenResult) return; // Not enough data
+
+                const { value: packetLen, newOffset: offset1 } = packetLenResult;
 
                 // Check if we have the full packet
-                if (buffer.length < offset + packetLen) return;
+                if (buffer.length < offset1 + packetLen) return;
 
                 // Read packet ID VarInt
-                let packetIdVal = 0;
-                shift = 0;
-                while (offset < buffer.length) {
-                    const byte = buffer[offset++];
-                    packetIdVal |= (byte & 0x7F) << shift;
-                    shift += 7;
-                    if ((byte & 0x80) === 0) break;
-                }
+                const packetIdResult = readVarInt(buffer, offset1);
+                if (!packetIdResult) return; // Not enough data
 
-                if (packetIdVal !== 0x00) { cleanup(); return; }
+                const { value: packetIdVal, newOffset: offset2 } = packetIdResult;
+
+                if (packetIdVal !== 0x00) {
+                    console.error(`Unexpected packet ID: ${packetIdVal} from ${host}:${port}`);
+                    cleanup();
+                    return;
+                }
 
                 // Read JSON string length VarInt
-                let strLen = 0;
-                shift = 0;
-                while (offset < buffer.length) {
-                    const byte = buffer[offset++];
-                    strLen |= (byte & 0x7F) << shift;
-                    shift += 7;
-                    if ((byte & 0x80) === 0) break;
-                }
+                const strLenResult = readVarInt(buffer, offset2);
+                if (!strLenResult) return; // Not enough data
 
-                if (buffer.length < offset + strLen) return;
+                const { value: strLen, newOffset: offset3 } = strLenResult;
 
-                const jsonStr = buffer.toString('utf8', offset, offset + strLen);
+                if (buffer.length < offset3 + strLen) return; // Not enough data for JSON
+
+                const jsonStr = buffer.toString('utf8', offset3, offset3 + strLen);
                 const response = JSON.parse(jsonStr);
 
                 if (!resolved) {
                     resolved = true;
-                    resolve(response.players?.online || 0);
+                    const playerCount = response.players?.online || 0;
+                    resolve(playerCount);
                 }
                 socket.destroy();
-            } catch {
-                // Incomplete data, wait for more
+            } catch (err) {
+                console.error(`Error parsing response from ${host}:${port}: ${err.message}`);
+                cleanup();
             }
         });
     });
@@ -149,10 +166,29 @@ function getPlayerCount(host, port) {
  * @returns {Promise<number>}
  */
 async function getTotalPlayerCount() {
-    const counts = await Promise.all(
-        SERVERS.map(s => getPlayerCount(s.host, s.port))
-    );
-    return counts.reduce((sum, c) => sum + c, 0);
+    try {
+        // Set a global timeout for all queries
+        const globalTimeout = new Promise((_, reject) =>
+            setTimeout(() => reject(new Error('Global player count query timeout')), 15000)
+        );
+
+        const counts = await Promise.race([
+            Promise.all(
+                SERVERS.map(s => getPlayerCount(s.host, s.port).catch(err => {
+                    console.error(`Error querying ${s.host}:${s.port}: ${err.message}`);
+                    return 0;
+                }))
+            ),
+            globalTimeout
+        ]);
+
+        const total = counts.reduce((sum, c) => sum + c, 0);
+        console.log(`✅ Player count updated: ${total} players online`);
+        return total;
+    } catch (err) {
+        console.error(`❌ Failed to get total player count: ${err.message}`);
+        return 0;
+    }
 }
 
 module.exports = { getTotalPlayerCount, SERVERS };

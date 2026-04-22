@@ -14,7 +14,11 @@ const UPDATE_INTERVAL = 60_000; // Refresh every 60 seconds
  */
 async function updatePresence(client) {
     try {
+        console.log(colors.cyan('🔄 Fetching player count...'));
         const totalPlayers = await getTotalPlayerCount();
+
+        console.log(colors.green(`✅ Setting presence to: ${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`));
+
         client.user.setPresence({
             activities: [{
                 name: `${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`,
@@ -32,9 +36,11 @@ const ReadyHandler = (client) => {
         console.log(colors.green(`✅ Connecté en tant que ${colors.bold(client.user.username)}`) + colors.cyan(' • Statut: Online'));
 
         // Initial presence update
+        console.log(colors.cyan('⏳ Updating player count on startup...'));
         await updatePresence(client);
 
-        // Periodic refresh
+        // Periodic refresh every 60 seconds
+        console.log(colors.cyan(`⏱️  Setting up player count refresh every 60 seconds...`));
         setInterval(() => updatePresence(client), UPDATE_INTERVAL);
     });
 };
