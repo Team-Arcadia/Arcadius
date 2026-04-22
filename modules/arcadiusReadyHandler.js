@@ -4,7 +4,7 @@ const CONFIG = require('./arcadiusConfig');
 const { reloadKeywords } = require('./keywordHandler');
 
 const arcadiusReadyHandler = (client, botState) => {
-    client.once('clientReady', async () => {
+    client.once('ready', async () => {
         logger.info('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
         logger.info(`✅ Bot connecté: ${client.user.tag} (ID: ${client.user.id})`);
         logger.info(`Pool CHAT    : ${botState.chatPool.getSize()} clés | Modèle: ${botState.chatModel}`);

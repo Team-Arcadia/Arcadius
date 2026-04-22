@@ -32,7 +32,7 @@ async function updatePresence(client) {
 }
 
 const ReadyHandler = (client) => {
-    client.once('ready', async () => {
+    client.once('clientReady', async () => {
         console.log(colors.green(`✅ Connecté en tant que ${colors.bold(client.user.username)}`) + colors.cyan(' • Statut: Online'));
 
         // Initial presence update

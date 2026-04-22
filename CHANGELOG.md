@@ -8,10 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed / Corrections
 
+- **(EN)** Fixed Discord.js v14 compatibility: changed 'ready' event to 'clientReady' in ready handlers.
 - **(EN)** Fixed player count fetching from Minecraft servers with robust VarInt parsing.
 - **(EN)** Reduced excessive timeout from 120 seconds to 10 seconds per server query.
 - **(EN)** Added comprehensive error logging for server status queries for better debugging.
 - **(EN)** Fixed offset tracking in Minecraft protocol parsing to prevent data loss.
+- **(FR)** Correction de la compatibilité Discord.js v14 : événement 'ready' changé en 'clientReady'.
 - **(FR)** Correction du parsing du protocole Minecraft pour la récupération du nombre de joueurs en ligne.
 - **(FR)** Réduction du timeout excessif (120s → 10s) pour les requêtes serveur.
 - **(FR)** Ajout de logs complètes pour le débogage des requêtes de statut serveur.
