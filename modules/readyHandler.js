@@ -18,7 +18,7 @@ async function updatePresence(client) {
 
         console.log(colors.green(`✅ Setting presence to: ${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`));
 
-        client.user.setPresence({
+        await client.user.setPresence({
             activities: [{
                 name: `${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`,
                 type: 'Watching'
