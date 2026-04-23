@@ -6,7 +6,7 @@ const colors = require('colors');
 const { PresenceUpdateStatus, ActivityType } = require('discord.js');
 const { getTotalPlayerCount } = require('./serverStatus');
 
-const UPDATE_INTERVAL = 60_000; // Refresh every 60 seconds
+const UPDATE_INTERVAL = 60000; // Refresh every 60 seconds
 
 /**
  * Updates the bot presence with current total player count.
