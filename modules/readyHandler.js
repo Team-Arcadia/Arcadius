@@ -3,7 +3,6 @@
 // Sets bot presence to display total Minecraft player count across all servers.
 
 const colors = require('colors');
-const { PresenceUpdateStatus, ActivityType } = require('discord.js');
 const { getTotalPlayerCount } = require('./serverStatus');
 
 const UPDATE_INTERVAL = 60000; // Refresh every 60 seconds
@@ -22,9 +21,9 @@ async function updatePresence(client) {
         client.user.setPresence({
             activities: [{
                 name: `${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`,
-                type: ActivityType.Watching
+                type: 'Watching'
             }],
-            status: PresenceUpdateStatus.Online
+            status: 'online'
         });
     } catch (err) {
         console.error(colors.red('❌ Failed to update player count presence:'), err.message);
