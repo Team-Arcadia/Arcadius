@@ -3,9 +3,10 @@
 // Sets bot presence to display total Minecraft player count across all servers.
 
 const colors = require('colors');
+const { PresenceUpdateStatus, ActivityType } = require('discord.js');
 const { getTotalPlayerCount } = require('./serverStatus');
 
-const UPDATE_INTERVAL = 60000; // Refresh every 60 seconds
+const UPDATE_INTERVAL = 60_000; // Refresh every 60 seconds
 
 /**
  * Updates the bot presence with current total player count.
@@ -13,17 +14,13 @@ const UPDATE_INTERVAL = 60000; // Refresh every 60 seconds
  */
 async function updatePresence(client) {
     try {
-        console.log(colors.cyan('🔄 Fetching player count...'));
         const totalPlayers = await getTotalPlayerCount();
-
-        console.log(colors.green(`✅ Setting presence to: ${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`));
-
-        await client.user.setPresence({
+        client.user.setPresence({
             activities: [{
                 name: `${totalPlayers} joueur${totalPlayers !== 1 ? 's' : ''} en ligne`,
-                type: 'Watching'
+                type: ActivityType.Watching
             }],
-            status: 'online'
+            status: PresenceUpdateStatus.Online
         });
     } catch (err) {
         console.error(colors.red('❌ Failed to update player count presence:'), err.message);
@@ -31,15 +28,13 @@ async function updatePresence(client) {
 }
 
 const ReadyHandler = (client) => {
-    client.once('ready', async () => {
+    client.once('clientReady', async () => {
         console.log(colors.green(`✅ Connecté en tant que ${colors.bold(client.user.username)}`) + colors.cyan(' • Statut: Online'));
 
         // Initial presence update
-        console.log(colors.cyan('⏳ Updating player count on startup...'));
         await updatePresence(client);
 
-        // Periodic refresh every 60 seconds
-        console.log(colors.cyan(`⏱️  Setting up player count refresh every 60 seconds...`));
+        // Periodic refresh
         setInterval(() => updatePresence(client), UPDATE_INTERVAL);
     });
 };

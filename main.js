@@ -42,7 +42,7 @@ commandClient.commands = new Collection();
 // Initialisation des handlers avec gestion des erreurs
 try {
     console.log(colors.cyan('🔧 Initialisation des handlers Bot Commandes...'));
-    // readyHandler(commandClient);  // Géré par arcadiusClient pour les deux clients
+    readyHandler(commandClient);  // Géré par arcadiusClient pour les deux clients
     commandHandler(commandClient);
     interactionHandler(commandClient);
     console.log(colors.green('✅ Handlers Bot Commandes initialisés avec succès'));
