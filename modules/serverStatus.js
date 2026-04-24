@@ -9,7 +9,8 @@ const SERVERS = [
     { host: '57.128.100.254', port: 25567 },
     { host: '51.195.235.151', port: 25565 },
     { host: '51.195.235.74', port: 25565 },
-    { host: '51.210.178.102', port: 25565 }
+    { host: '51.210.178.102', port: 25565 },
+    { host: '103.195.102.81', port: 25565 }
 ];
 
 const QUERY_TIMEOUT = 10000; // 10 secondes timeout par serveur
