@@ -7,8 +7,8 @@
 
 const colors = require('colors');
 require('dotenv').config();
-const LLMProviderPool = require('./modules/llmProviderPool');
-const logger = require('./modules/logger');
+const LLMProviderPool = require('../modules/llmProviderPool');
+const logger = require('../modules/logger');
 
 async function testLLMConnection() {
     console.log(colors.cyan('\n🧪 TEST DE CONNEXION LLM\n'));

@@ -14,6 +14,18 @@ const arcadiusReadyHandler = (client, botState) => {
         // Charger les mots-clés
         reloadKeywords();
 
+        // Initialiser le système RAG (Retrieval Augmented Generation)
+        if (botState.ragSystem) {
+            logger.info('🧠 Initialisation du système RAG...');
+            try {
+                await botState.ragSystem.initialize();
+                const ragStats = botState.ragSystem.getStats();
+                logger.info(`✅ RAG système prêt avec ${ragStats.knowledgeBase.totalDocuments} documents indexés`);
+            } catch (err) {
+                logger.warn(`⚠️  Erreur lors de l'init RAG: ${err.message}`);
+            }
+        }
+
         // Démarrer la tâche de rafraîchissement
         setInterval(() => {
             logger.info('🔄 Rafraîchissement des données JSON en arrière-plan...');

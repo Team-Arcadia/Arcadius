@@ -166,7 +166,7 @@ console.log(colors.yellow('4️⃣  Test de connexion LLM...'));
 
 (async () => {
     try {
-        const LLMProviderPool = require('./modules/llmProviderPool');
+        const LLMProviderPool = require('../modules/llmProviderPool');
         const llmPool = new LLMProviderPool();
 
         if (llmPool.providers.length === 0) {

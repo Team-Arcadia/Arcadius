@@ -16,7 +16,7 @@ Le bot Arcadius peut maintenant **détecter automatiquement les demandes d'aide 
                   ↓
 ┌─────────────────────────────────────────────────────────────┐
 │ ÉTAPE 1: Détection des Mots-Clés (RAPIDE ~1ms)              │
-│                                                              │
+│                                                             │
 │ modules/helpDetectionHandler.js → detectHelpKeywords()      │
 │ ├─ Cherche: "comment" ✅ TROUVÉ                             │
 │ ├─ Catégorie: "gameplay"                                    │
@@ -25,41 +25,41 @@ Le bot Arcadius peut maintenant **détecter automatiquement les demandes d'aide 
                   ↓
 ┌─────────────────────────────────────────────────────────────┐
 │ ÉTAPE 2: Analyse Intelligente par LLM (1-3 secondes)        │
-│                                                              │
+│                                                             │
 │ modules/helpDetectionHandler.js → analyzeSupportRequest()   │
-│ │                                                            │
-│ ├─ Envoie le message au LLM (Gemini/Groq/OpenRouter)       │
-│ │  Question: "Est-ce vraiment une demande d'aide?"         │
-│ │                                                            │
+│ │                                                           │
+│ ├─ Envoie le message au LLM (Gemini/Groq/OpenRouter)        │
+│ │  Question: "Est-ce vraiment une demande d'aide?"          │
+│ │                                                           │
 │ └─ LLM répond avec analyse:                                 │
-│    {                                                         │
-│      "isRealQuestion": true,        // ✅ Oui              │
-│      "canAnswer": true,             // ✅ On peut répondre │
-│      "category": "gameplay",        // 📁 Type             │
-│      "confidence": 95,              // 🎯 Certitude        │
-│      "reason": "Demande claire"     // 📝 Explication      │
-│    }                                                         │
+│    {                                                        │
+│      "isRealQuestion": true,        // ✅ Oui               │
+│      "canAnswer": true,             // ✅ On peut répondre  │
+│      "category": "gameplay",        // 📁 Type              │
+│      "confidence": 95,              // 🎯 Certitude         │
+│      "reason": "Demande claire"     // 📝 Explication       │
+│    }                                                        │
 └─────────────────┬───────────────────────────────────────────┘
                   ↓
 ┌─────────────────────────────────────────────────────────────┐
 │ ÉTAPE 3: Décision & Action                                  │
-│                                                              │
-│ if (isRealQuestion && canAnswer):                            │
-│   └─ 🤖 Générer & envoyer une réponse automatique            │
-│                                                              │
-│ elif (isRealQuestion && !canAnswer):                         │
-│   └─ 👀 Ajouter une réaction (question détectée)           │
-│                                                              │
-│ else:                                                        │
+│                                                             │
+│ if (isRealQuestion && canAnswer):                           │
+│   └─ 🤖 Générer & envoyer une réponse automatique           │
+│                                                             │
+│ elif (isRealQuestion && !canAnswer):                        │
+│   └─ 👀 Ajouter une réaction (question détectée)            │
+│                                                             │
+│ else:                                                       │
 │   └─ ➡️  Ignorer (pas une demande d'aide)                   │
 └─────────────────┬───────────────────────────────────────────┘
                   ↓
 ┌─────────────────────────────────────────────────────────────┐
-│ ✅ RÉSULTAT SUR DISCORD                                      │
-│                                                              │
-│ Bot répond au message de l'utilisateur:                      │
-│ "Télécharge le launcher depuis [lien], puis lance-le.      │
-│  Si ça ne marche pas, vérife ta version de Java! 🎮"       │
+│ ✅ RÉSULTAT SUR DISCORD                                     │
+│                                                             │
+│ Bot répond au message de l'utilisateur:                     │
+│ "Télécharge le launcher depuis [lien], puis lance-le.       │
+│  Si ça ne marche pas, vérife ta version de Java! 🎮"        │
 └─────────────────────────────────────────────────────────────┘
 ```
 

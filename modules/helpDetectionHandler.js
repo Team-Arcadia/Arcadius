@@ -2,6 +2,8 @@
 const logger = require('./logger');
 const path = require('path');
 const fs = require('fs');
+const { getKeywordResponse } = require('./keywordHandler');
+const { detectLanguage, getLanguageInstruction } = require('./languageDetector');
 
 const HELP_HANDLER_BOUND_FLAG = Symbol('helpDetectionHandlerBound');
 const processedMessageIds = new Set();
@@ -72,7 +74,7 @@ const HELP_TRIGGERS = {
         /\bpourquoi\b/i,          // Pourquoi
         /\bc'est quoi\b/i,        // C'est quoi
         /\bwat\b/i,               // Wat?
-        /\b\?\s*$/, // Message finissant par ?
+        /\?\s*$/,                 // Message finissant par ?
     ],
     issues: [
         /\bbug\b/i,               // Bug
@@ -132,22 +134,50 @@ const keywordMatchesContent = (keyword, contentLower) => {
 
 /**
  * Détecte la catégorie d'un message basée sur les keywords
+ * Priorité: les keywords les plus longs/spécifiques d'abord
  */
 const detectCategory = (content) => {
     const contentLower = content.toLowerCase();
 
-    // Chercher dans chaque catégorie
+    // Créer une liste de keywords avec leur catégorie et longueur
+    const allKeywords = [];
     for (const [category, data] of Object.entries(RESPONSES)) {
         if (!data.keywords || data.keywords.length === 0) continue;
 
         for (const keyword of data.keywords) {
-            if (keywordMatchesContent(keyword, contentLower)) {
-                return category;
-            }
+            allKeywords.push({ keyword, category, length: keyword.length });
+        }
+    }
+
+    // Trier par longueur décroissante (plus spécifiques d'abord)
+    allKeywords.sort((a, b) => b.length - a.length);
+
+    // Tester dans l'ordre de spécificité
+    for (const { keyword, category } of allKeywords) {
+        if (keywordMatchesContent(keyword, contentLower)) {
+            return category;
         }
     }
 
     return 'autre'; // Fallback
+};
+
+/**
+ * Vérifie si un message est une vraie QUESTION (uniquement)
+ * Ignore les problèmes, frustrations, actions générales
+ */
+const isQuestion = (content) => {
+    const contentLower = content.toLowerCase();
+
+    // Vérifier contre les patterns de questions uniquement
+    const questionPatterns = HELP_TRIGGERS.questions;
+    for (const pattern of questionPatterns) {
+        if (pattern.test(contentLower)) {
+            return true;
+        }
+    }
+
+    return false;
 };
 
 /**
@@ -165,6 +195,8 @@ const detectHelpKeywords = (content) => {
 const analyzeSupportRequest = async (message, llmClient) => {
     try {
         const category = detectCategory(message.content);
+        const detectedLanguage = detectLanguage(message.content);
+        const isEnglish = detectedLanguage === 'en';
 
         // Si pas de LLM configuré, utiliser la détection de catégorie
         if (!llmClient) {
@@ -179,7 +211,30 @@ const analyzeSupportRequest = async (message, llmClient) => {
         }
 
         // Créer un prompt intelligent pour l'analyse
-        const prompt = `Analyze this message to determine if it's a real help request:
+        const prompt = isEnglish ?
+            `Analyze this message to determine if it's a real help request:
+"${message.content}"
+
+Respond in JSON format (no markdown, just raw JSON):
+{
+  "isRealQuestion": boolean,
+  "canAnswer": boolean,
+  "category": "bug" | "gameplay" | "installation" | "other",
+  "confidence": number (0-100),
+  "reason": "Brief explanation"
+}
+
+Guidelines:
+- isRealQuestion: Is this actually asking for help? (not just conversation)
+- canAnswer: Can this be answered with general advice? (not too vague or personal)
+- category: Classify the question type
+- confidence: How confident are you? (0-100)
+
+CRITICAL: Return ONLY the JSON object, nothing else. 
+NO thinking blocks, NO drafts, NO reasoning, NO internal monologue, NO explanations.
+Just the raw JSON response.`
+            :
+            `Analyze this message to determine if it's a real help request:
 "${message.content}"
 
 Respond in JSON format (no markdown, just raw JSON):
@@ -246,20 +301,62 @@ Just the raw JSON response.`;
 };
 
 /**
- * Sélectionne une réponse aléatoire basée sur la catégorie
+ * Sélectionne une réponse aléatoire basée sur la catégorie et la langue
+ * @param {string} category - La catégorie de réponse
+ * @param {string} language - La langue détectée ('en', 'fr', ou 'unknown')
+ * @returns {string} - La réponse sélectionnée aléatoirement
  */
-const selectRandomResponse = (category) => {
+const selectRandomResponse = (category, language = 'fr') => {
     const categoryResponses = RESPONSES[category];
     if (!categoryResponses || !categoryResponses.templates || categoryResponses.templates.length === 0) {
         // Fallback si la catégorie n'existe pas
         const otherResponses = RESPONSES['autre'];
         if (otherResponses && otherResponses.templates && otherResponses.templates.length > 0) {
-            return otherResponses.templates[Math.floor(Math.random() * otherResponses.templates.length)];
+            const templates = otherResponses.templates;
+            return templates[Math.floor(Math.random() * templates.length)];
         }
         return "Je n'ai pas de réponse pour ca... Essaie de reformuler! 🤔";
     }
 
-    return categoryResponses.templates[Math.floor(Math.random() * categoryResponses.templates.length)];
+    const templates = categoryResponses.templates;
+
+    // Si la langue est l'anglais, sélectionner parmi les templates anglais
+    if (language === 'en') {
+        // Les templates anglais sont généralement dans la deuxième moitié de la liste
+        const midpoint = Math.ceil(templates.length / 2);
+
+        // Vérifier si nous avons des templates anglais (longueur pair = nombre pair de paires)
+        if (templates.length >= 2) {
+            // Prendre les templates de la deuxième moitié (templates anglais)
+            const englishTemplates = templates.slice(midpoint);
+
+            // Double vérification: s'assurer que c'est vraiment du contenu anglais
+            // Les templates anglais devraient avoir certains patterns
+            const validEnglish = englishTemplates.filter(t => {
+                // Pattern pour vérifier que c'est de l'anglais
+                return /\b(here|is|are|your|you|the|check|visit|find)\b/.test(t);
+            });
+
+            if (validEnglish.length > 0) {
+                return validEnglish[Math.floor(Math.random() * validEnglish.length)];
+            }
+        }
+
+        // Si pas de templates anglais clairs, retourner un template aléatoire
+        // (fallback: le LLM aurait dû générer une réponse de toute façon)
+        return templates[Math.floor(Math.random() * templates.length)];
+    }
+
+    // Pour le français, prendre la première moitié des templates
+    const midpoint = Math.ceil(templates.length / 2);
+    const frenchTemplates = templates.slice(0, midpoint);
+
+    if (frenchTemplates.length > 0) {
+        return frenchTemplates[Math.floor(Math.random() * frenchTemplates.length)];
+    }
+
+    // Fallback final
+    return templates[Math.floor(Math.random() * templates.length)];
 };
 
 /**
@@ -271,9 +368,40 @@ const generateSupportResponse = async (message, analysis, llmClient) => {
     }
 
     try {
-        // Option 1: Si LLM disponible, générer une réponse contextuelle
+        // Détecter la langue de l'utilisateur
+        const detectedLanguage = detectLanguage(message.content);
+        const isEnglish = detectedLanguage === 'en';
+
+        // Option 1: Préférer les templates prédéfinis (plus précis et fiables)
+        const response = normalizeTemplateText(selectRandomResponse(analysis.category, detectedLanguage));
+        if (response && response !== "Je n'ai pas de réponse pour ca... Essaie de reformuler! 🤔") {
+            return response;
+        }
+
+        // Option 2: Si pas de templates disponibles, générer une réponse contextuelle avec LLM
         if (llmClient) {
-            const generatePrompt = `Tu es un assistant d'aide pour un serveur Minecraft Discord.
+            const languageInstruction = getLanguageInstruction(detectedLanguage);
+            const generatePrompt = isEnglish ?
+                `You are a help assistant for a Minecraft Discord server.
+The user's message is: "${message.content}"
+Detected category: ${analysis.category}
+
+Generate a short (3-5 lines max) and practical help response.
+The response must be:
+- Direct and useful
+- In English
+- Without mentioning you are an AI
+- Without excessive politeness
+
+${languageInstruction}
+
+CRITICAL INSTRUCTION:
+Respond ONLY with the final answer text.
+NO thinking blocks, NO drafts, NO brainstorm, NO internal monologue.
+NO reasoning or analysis text before or after.
+ONLY the help response message.`
+                :
+                `Tu es un assistant d'aide pour un serveur Minecraft Discord.
 Le message de l'utilisateur est: "${message.content}"
 Catégorie détectée: ${analysis.category}
 
@@ -284,84 +412,122 @@ La réponse doit être:
 - Sans mentionner que tu es une IA
 - Sans formule de politesse excessive
 
+${languageInstruction}
+
 CRITICAL INSTRUCTION:
 Respond ONLY with the final answer text.
 NO thinking blocks, NO drafts, NO brainstorm, NO internal monologue.
 NO reasoning or analysis text before or after.
 ONLY the help response message.`;
 
-            logger.debug(`📤 Génération de réponse avec LLM...`);
+            logger.debug(`📤 Génération de réponse avec LLM (Langue: ${isEnglish ? 'EN' : 'FR'})...`);
             const aiResponse = await llmClient.analyzeMessage(generatePrompt);
             return aiResponse.trim();
         }
 
-        // Option 2: Fallback sur les templates prédéfinis
-        const response = normalizeTemplateText(selectRandomResponse(analysis.category));
+        // Fallback ultime
         return response;
     } catch (err) {
         logger.error(`Erreur lors de la génération de réponse: ${err.message}`);
         // Fallback ultime
-        return selectRandomResponse(analysis.category);
+        return selectRandomResponse(analysis.category, 'fr');
     }
 };
 
 /**
- * Initialise le handler de détection d'aide
+ * Configure le handler de détection d'aide sur un client Discord
  */
 const helpDetectionHandler = (client, llmClient) => {
+    // Éviter d'ajouter le listener plusieurs fois
     if (client[HELP_HANDLER_BOUND_FLAG]) {
-        logger.warn('⚠️  helpDetectionHandler déjà initialisé: double listener évité');
+        logger.debug('⚠️  Handler d\'aide déjà bindé sur ce client');
         return;
     }
-
     client[HELP_HANDLER_BOUND_FLAG] = true;
 
-    // Canaux pour la détection (à configurer)
-    const SUPPORT_CHANNELS = process.env.SUPPORT_CHANNEL_IDS?.split(',') || [];
+    const SUPPORT_CHANNELS = process.env.SUPPORT_CHANNEL_IDS?.split(',').map(ch => ch.trim()) || [];
 
-    if (SUPPORT_CHANNELS.length === 0) {
-        logger.warn('⚠️  Aucun canal de support configuré (SUPPORT_CHANNEL_IDS)');
-        return;
-    }
-
-    client.on('messageCreate', async message => {
+    client.on('messageCreate', async (message) => {
         try {
-            if (processedMessageIds.has(message.id)) return;
+            // Ignorer les messages des bots
+            if (message.author.bot) return;
 
-            // Ignorer les messages du bot
-            if (message.author.id === client.user.id) return;
+            // Vérifier si c'est dans un canal de support
+            if (!SUPPORT_CHANNELS.includes(message.channelId)) return;
 
-            // Ignorer les utilisateurs spécifiés dans responses.json
-            if (RESPONSES.ignored_users && RESPONSES.ignored_users.includes(message.author.username.toLowerCase())) {
-                logger.debug(`Utilisateur ignoré: ${message.author.username}`);
+            // Anti-doublon: check si on a déjà traité ce message
+            if (processedMessageIds.has(message.id)) {
+                logger.debug(`⏭️  Message déjà traité: ${message.id}`);
                 return;
             }
 
-            // Vérifier si le message est dans un canal de support
-            if (!SUPPORT_CHANNELS.includes(message.channelId)) return;
+            // ✅ CRITÈRE PRINCIPAL: C'est une QUESTION (uniquement)
+            // Ignorer complètement si ce n'est pas une question
+            if (!isQuestion(message.content)) {
+                logger.debug(`ℹ️  Message non pertinent (pas une question): "${message.content.slice(0, 40)}"`);
+                return;
+            }
 
-            // Ignorer les messages trop courts
-            if (message.content.length < 10) return;
-
-            // Détecter les mots-clés
-            if (!detectHelpKeywords(message.content)) return;
-
+            // Acquérir le lock pour ce message
             if (!acquireMessageLock(message.id)) {
-                logger.debug(`⏭️ Message déjà pris en charge (lock): ${message.id}`);
+                logger.debug(`🔒 Message en cours de traitement: ${message.id}`);
                 return;
             }
 
             rememberProcessedMessage(message.id);
 
-            logger.info(`🔍 Détection d'aide potentielle: ${message.author.username} - ${message.content.slice(0, 50)}`);
+            // 🔑 VÉRIFIER LES KEYWORDS D'ABORD (priorité haute)
+            const keywordResponse = getKeywordResponse(message.content, message.channelId);
+            if (keywordResponse) {
+                try {
+                    // Détecter la langue une seule fois
+                    const detectedLanguage = detectLanguage(message.content);
+                    const isEnglish = detectedLanguage === 'en';
 
-            // Afficher le typing pour l'expérience UX
-            await message.channel.sendTyping();
+                    // Détecter la catégorie et adapter la réponse
+                    let finalResponse = keywordResponse;
 
-            // Analyser avec le LLM
+                    if (keywordResponse.startsWith('http')) {
+                        // C'est une URL, on cherche la catégorie de réponse appropriée
+                        const category = detectCategory(message.content);
+                        if (category && category !== 'autre' && RESPONSES[category]?.templates) {
+                            const templates = RESPONSES[category].templates;
+                            if (isEnglish) {
+                                const midpoint = Math.ceil(templates.length / 2);
+                                const englishTemplates = templates.slice(midpoint);
+                                const validEnglish = englishTemplates.filter(t => /\b(here|is|are|your|you|the|check|visit|find)\b/.test(t));
+                                if (validEnglish.length > 0) {
+                                    finalResponse = validEnglish[Math.floor(Math.random() * validEnglish.length)];
+                                }
+                            } else {
+                                const midpoint = Math.ceil(templates.length / 2);
+                                const frenchTemplates = templates.slice(0, midpoint);
+                                if (frenchTemplates.length > 0) {
+                                    finalResponse = frenchTemplates[Math.floor(Math.random() * frenchTemplates.length)];
+                                }
+                            }
+                        } else if (keywordResponse.includes('serverpack')) {
+                            // Réponse spéciale pour serverpack
+                            finalResponse = isEnglish
+                                ? "Here's the link to download the server pack: https://www.arcadia-echoes-of-power.fr/serverpack 📦"
+                                : "Voici le lien pour télécharger le server pack : https://www.arcadia-echoes-of-power.fr/serverpack 📦";
+                        }
+                    }
+
+                    await message.reply({
+                        content: finalResponse.slice(0, 2000),
+                        allowedMentions: { repliedUser: true }
+                    });
+                    logger.info(`✅ Réponse par mot-clé envoyée (langue: ${detectedLanguage})`);
+                    return;
+                } catch (err) {
+                    logger.error(`Erreur lors de l'envoi de la réponse par mot-clé: ${err.message}`);
+                    return;
+                }
+            }
+
+            // Déterminer si c'est un message d'aide
             const analysis = await analyzeSupportRequest(message, llmClient);
-
-            logger.debug(`📊 Analyse: ${JSON.stringify(analysis)}`);
 
             // Si c'est une vraie question ET qu'on peut y répondre
             if (analysis.isRealQuestion && analysis.canAnswer) {
@@ -393,6 +559,7 @@ const helpDetectionHandler = (client, llmClient) => {
             logger.error(`Erreur dans helpDetectionHandler: ${err.message}`);
         }
     });
+
 
     logger.info(`✅ Handler de détection d'aide initialisé pour ${SUPPORT_CHANNELS.length} canal(aux)`);
 };

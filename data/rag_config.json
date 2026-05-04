@@ -1,0 +1,177 @@
+{
+    "ragSystem": {
+        "enabled": true,
+        "description": "Configuration du système RAG (Retrieval Augmented Generation)",
+        "knowledgeBase": {
+            "enabled": true,
+            "description": "Indexation des documents",
+            "sources": {
+                "json": [
+                    "data/responses.json",
+                    "data/keywords.json",
+                    "data/links.json",
+                    "data/mods.json",
+                    "data/server_info.json",
+                    "data/prompt_config.json"
+                ],
+                "markdown": [
+                    "Documentation/*.md"
+                ]
+            },
+            "refreshInterval": 3600000,
+            "refreshIntervalDescription": "Millisecondes (3600000 = 1h)"
+        },
+        "semanticSearch": {
+            "enabled": true,
+            "description": "Recherche sémantique avec embeddings",
+            "model": "embedding-001",
+            "modelDescription": "Google Generative AI Embedding Model",
+            "caching": {
+                "enabled": true,
+                "maxSize": 100,
+                "ttl": 86400000,
+                "ttlDescription": "Millisecondes (86400000 = 24h)"
+            },
+            "fallback": {
+                "enabled": true,
+                "type": "keyword",
+                "description": "Fallback automatique sur recherche mots-clés si embeddings échouent"
+            }
+        },
+        "retrieval": {
+            "topK": 3,
+            "topKDescription": "Nombre max de documents à injecter par défaut",
+            "similarityThreshold": 0.3,
+            "similarityThresholdDescription": "Score minimum pour considérer un document comme pertinent (0-1)",
+            "maxContextLength": 500,
+            "maxContextLengthDescription": "Caractères max par document injecté"
+        },
+        "analysis": {
+            "enabled": true,
+            "description": "Analyse améliorée des questions avec RAG",
+            "confidenceBoost": 20,
+            "confidenceBoostDescription": "Augmentation de confiance si RAG trouve quelque chose",
+            "minConfidenceForAnswer": 50,
+            "minConfidenceForAnswerDescription": "Confiance minimum pour tenter une réponse"
+        },
+        "performance": {
+            "enabled": true,
+            "monitoring": {
+                "enabled": true,
+                "logInterval": 300000,
+                "logIntervalDescription": "Millisecondes entre les logs de stats (300000 = 5min)"
+            },
+            "cacheStats": true,
+            "documentStats": true
+        },
+        "costControl": {
+            "enabled": true,
+            "description": "Contrôle des coûts API Gemini",
+            "embeddings": {
+                "costPerMillionTokens": 0.02,
+                "description": "Coût estimé par 1M tokens (API Google)",
+                "monitored": true
+            },
+            "maxEmbeddingsPerMinute": 60,
+            "rateLimit": {
+                "enabled": true,
+                "requestsPerMinute": 60
+            }
+        },
+        "logging": {
+            "debug": false,
+            "debugDescription": "Logs détaillés (peut impacter performance)",
+            "logRAGAnalysis": true,
+            "logSearchResults": true,
+            "logEmbeddings": false,
+            "logCache": false
+        },
+        "advanced": {
+            "description": "Configuration avancée",
+            "vectorDimensions": 768,
+            "vectorDimensionsDescription": "Dimensions des embeddings Gemini",
+            "chunkingStrategy": "semantic",
+            "chunkingStrategyDescription": "smart | simple | semantic",
+            "rerankingEnabled": false,
+            "rerankingEnabledDescription": "Re-score les résultats avec LLM (EXPÉRIMENTAL)"
+        }
+    },
+    "integrations": {
+        "helpDetectionHandler": {
+            "enabled": true,
+            "useRAG": true,
+            "description": "Utiliser RAG pour analyser les questions"
+        },
+        "promptBuilder": {
+            "enabled": true,
+            "injectRAGContext": true,
+            "description": "Injecter le contexte RAG dans les prompts"
+        },
+        "arcadiusMessageHandler": {
+            "enabled": false,
+            "useRAG": false,
+            "description": "Utiliser RAG pour les messages généraux (À implémenter)"
+        }
+    },
+    "documentSources": {
+        "priority": [
+            {
+                "source": "data/responses.json",
+                "weight": 10,
+                "description": "Réponses thématisées (priorité HAUTE)"
+            },
+            {
+                "source": "Documentation/*.md",
+                "weight": 8,
+                "description": "Guides et documentation (priorité MOYENNE)"
+            },
+            {
+                "source": "data/keywords.json",
+                "weight": 6,
+                "description": "Mots-clés et liens (priorité MOYENNE)"
+            },
+            {
+                "source": "data/mods.json",
+                "weight": 5,
+                "description": "Infos mods (priorité BASSE)"
+            },
+            {
+                "source": "data/server_info.json",
+                "weight": 4,
+                "description": "Infos serveur (priorité BASSE)"
+            }
+        ]
+    },
+    "examples": {
+        "questions": [
+            {
+                "q": "Comment installer les mods?",
+                "expectedSource": "Documentation/INSTALLATION_GUIDE.md",
+                "expectedConfidence": 85
+            },
+            {
+                "q": "J'ai un bug",
+                "expectedSource": "data/responses.json",
+                "expectedConfidence": 75
+            },
+            {
+                "q": "Quel est le statut du serveur?",
+                "expectedSource": "data/server_info.json",
+                "expectedConfidence": 80
+            },
+            {
+                "q": "Comment voter?",
+                "expectedSource": "data/keywords.json",
+                "expectedConfidence": 70
+            }
+        ]
+    },
+    "metadata": {
+        "version": "1.0",
+        "createdDate": "2026-05-04",
+        "lastModified": "2026-05-04",
+        "author": "Système Arcadius",
+        "status": "production",
+        "documentation": "Documentation/RAG_SYSTEM.md"
+    }
+}

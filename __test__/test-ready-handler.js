@@ -6,7 +6,7 @@
 
 const colors = require('colors');
 const { Client, GatewayIntentBits } = require('discord.js');
-const readyHandler = require('./modules/readyHandler');
+const readyHandler = require('../modules/readyHandler');
 require('dotenv').config();
 
 const TEST_TOKEN = process.env.DISCORD_TOKEN || process.env.TOKEN;

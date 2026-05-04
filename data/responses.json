@@ -1,59 +1,249 @@
 {
-  "ignored_users": ["vyrriox", "not_._found", "gaspich", "jlpopeye", "romain.pqd", "aaamine", "skaizenh"," fufu8822", "harpie07", "cjustenathan"],
+  "ignored_users": [
+    "vyrriox",
+    "gaspich",
+    "jlpopeye",
+    "romain.pqd",
+    "aaamine",
+    "skaizenh",
+    "fufu8822",
+    "cjustenathan",
+    "curveo",
+    "yoto07.",
+    ".b1tch._.",
+    "_v4mpyress_",
+    "the_fricadelle",
+    "beuzed_2.0",
+    "youpalaa",
+    "rebelle123_storm",
+    "nokhxyr",
+    "rayzer656"
+  ],
   "bug": {
     "keywords": [
-      "un bug", "des bugs", "bugué", "buggé", "y'a un bug", "j'ai un bug", "gros bug", "petit bug",
-      "le serveur crash", "ça a crash", "serveur fermé", "serveur down", "crash de connexion", "jeu crash", "launcher crash",
-      "une erreur", "erreur java", "erreur de connexion", "message d'erreur", "error code", "internal server error",
-      "marche pas", "fonctionne pas", "ça veut pas marcher", "je n'arrive pas", "impossible de",
-      "ça lag", "gros lag", "fps drop", "ça rame", "trop de latence", "connexion perdue",
-      "j'ai un problème", "gros souci", "petit souci", "soucis avec", "souci de", "probleme serveur", "probleme connexion",
-      "je suis bloqué", "coincé", "glitch", "cassé", "item disparu", "inventaire vide", "perdu mon stuff", "mort bizarre"
+      "un bug",
+      "des bugs",
+      "bugué",
+      "buggé",
+      "y'a un bug",
+      "j'ai un bug",
+      "gros bug",
+      "petit bug",
+      "le serveur crash",
+      "ça a crash",
+      "serveur fermé",
+      "serveur down",
+      "crash de connexion",
+      "jeu crash",
+      "launcher crash",
+      "une erreur",
+      "erreur java",
+      "erreur de connexion",
+      "message d'erreur",
+      "error code",
+      "internal server error",
+      "marche pas",
+      "fonctionne pas",
+      "ça veut pas marcher",
+      "je n'arrive pas",
+      "impossible de",
+      "ça lag",
+      "gros lag",
+      "fps drop",
+      "ça rame",
+      "trop de latence",
+      "connexion perdue",
+      "j'ai un problème",
+      "gros souci",
+      "petit souci",
+      "soucis avec",
+      "souci de",
+      "probleme serveur",
+      "probleme connexion",
+      "je suis bloqué",
+      "coincé",
+      "glitch",
+      "cassé",
+      "item disparu",
+      "inventaire vide",
+      "perdu mon stuff",
+      "mort bizarre",
+      "bug",
+      "crash",
+      "error",
+      "it doesn't work",
+      "doesn't work",
+      "not working",
+      "broken",
+      "server is down",
+      "server crash",
+      "connection error",
+      "java error",
+      "lag",
+      "fps drop",
+      "latency",
+      "lost connection",
+      "i'm stuck",
+      "stuck",
+      "glitch",
+      "item disappeared",
+      "empty inventory",
+      "lost my stuff",
+      "weird death",
+      "something is wrong",
+      "problem with"
     ],
     "templates": [
       "Je te laisse aller poser ta question dans le channel https://discord.com/channels/1346965857288589472/1380977057881784410 ! Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
       "Un bug ? 🐛 Décris-le sur ce channel https://discord.com/channels/1346965857288589472/1380977057881784410 ! Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
       "C'est par ici qu'on gère les bugs : https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
       "Le bug te poursuit ? 😅 Viens en parler ici avec tous les détails : https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
-      "Problème détecté ! 🚨 Mets tes infos sur https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin."
+      "Problème détecté ! 🚨 Mets tes infos sur https://discord.com/channels/1346965857288589472/1380977057881784410. Tu peux aussi vérifier le statut des serveurs ici : https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Ne pas spammer** : les serveurs redémarrent automatiquement en cas de crash. S'ils ne redémarrent pas, merci d'attendre un admin.",
+      "Found a bug? 🐛 Report it here with all the details: https://discord.com/channels/1346965857288589472/1380977057881784410! You can also check server status here: https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Don't spam**: servers restart automatically in case of a crash. If they don't restart, please wait for an admin.",
+      "Having issues? 😅 Head over to this channel with full details: https://discord.com/channels/1346965857288589472/1380977057881784410. You can also check the server status here: https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **Please don't spam**: servers auto-restart on crash. If they don't, wait for an admin.",
+      "Problem detected! 🚨 Post your info here: https://discord.com/channels/1346965857288589472/1380977057881784410. Check server status: https://discord.com/channels/1346965857288589472/1348235685047566346.\\n\\n⚠️ **No spam**: servers auto-restart on crash!"
     ]
   },
   "installation": {
     "keywords": [
-      "comment installer", "pour installer", "tuto installation", "aider à installer", "installer le modpack", "installer le jeu", "setup du jeu",
-      "comment télécharger", "pour télécharger", "où télécharger", "telecharger le launcher", "télécharger forge", "lien de téléchargement", "download",
-      "installer java", "quelle version de java", "problème java", "erreur java au lancement",
-      "le mod pack", "mettre le modpack", "installer les mods", "ajouter les mods", "dossier mods",
-      "launcher arcadia", "lancer le jeu", "démarrer le jeu"
+      "comment installer",
+      "pour installer",
+      "tuto installation",
+      "aider à installer",
+      "installer le modpack",
+      "installer le jeu",
+      "setup du jeu",
+      "comment télécharger",
+      "pour télécharger",
+      "où télécharger",
+      "telecharger le launcher",
+      "télécharger forge",
+      "lien de téléchargement",
+      "download",
+      "installer java",
+      "quelle version de java",
+      "problème java",
+      "erreur java au lancement",
+      "le mod pack",
+      "mettre le modpack",
+      "installer les mods",
+      "ajouter les mods",
+      "dossier mods",
+      "launcher arcadia",
+      "lancer le jeu",
+      "démarrer le jeu",
+      "how to install",
+      "install the modpack",
+      "download modpack",
+      "where to download",
+      "launcher download",
+      "download forge",
+      "download link",
+      "install java",
+      "java version",
+      "java problem",
+      "java error",
+      "install mods",
+      "add mods",
+      "mods folder",
+      "start the game",
+      "launch the game",
+      "how do i install",
+      "how to install",
+      "where can i install"
     ],
     "templates": [
       "Pour l'installation, c'est par là: https://arcadia-echoes-of-power.fr/launcher - On te guidera étape par étape! 📥",
       "T'as besoin d'aide pour installer ? https://arcadia-echoes-of-power.fr/launcher est LE channel qu'il te faut!",
       "Installation compliquée ? Rends-toi sur https://arcadia-echoes-of-power.fr/launcher et suis les instructions avec l'équipe! 👨‍💻",
       "Le modpack ne s'installe pas ? Pose ta question ici: https://arcadia-echoes-of-power.fr/launcher et on va résoudre ça ensemble!",
-      "Des soucis d'installation ? 🔧 Va checker https://arcadia-echoes-of-power.fr/launcher, c'est là qu'on aide les gens!"
+      "Des soucis d'installation ? 🔧 Va checker https://arcadia-echoes-of-power.fr/launcher, c'est là qu'on aide les gens!",
+      "For installation, check it out here: https://arcadia-echoes-of-power.fr/launcher - We'll guide you step by step! 📥",
+      "Need help installing? https://arcadia-echoes-of-power.fr/launcher is the place to go!",
+      "Having trouble installing? Head to https://arcadia-echoes-of-power.fr/launcher and follow the instructions with the team! 👨‍💻",
+      "The modpack won't install? Ask here: https://arcadia-echoes-of-power.fr/launcher and we'll solve it together!",
+      "Installation issues? 🔧 Check out https://arcadia-echoes-of-power.fr/launcher, that's where we help!"
     ]
   },
   "gameplay": {
     "keywords": [
-      "comment jouer", "pour jouer", "est-ce qu'on peut jouer", "commencer à jouer", "débuter sur le serveur", "bien débuter", "tuto survie",
-      "comment faire pour", "astuce pour", "besoin d'aide pour", "comment on craft", "c'est quoi la touche", "comment ouvrir",
-      "les règles", "le règlement", "c'est autorisé de", "on a le droit de", "règle du serveur",
-      "comment rejoindre", "pour nous rejoindre", "comment aller sur",
-      "c'est quoi le but", "tuto du serveur", "guide officiel", "wiki du serveur", "lien du wiki"
+      "comment jouer",
+      "pour jouer",
+      "est-ce qu'on peut jouer",
+      "commencer à jouer",
+      "débuter sur le serveur",
+      "bien débuter",
+      "tuto survie",
+      "comment faire pour",
+      "astuce pour",
+      "besoin d'aide pour",
+      "comment on craft",
+      "c'est quoi la touche",
+      "comment ouvrir",
+      "les règles",
+      "le règlement",
+      "c'est autorisé de",
+      "on a le droit de",
+      "règle du serveur",
+      "comment rejoindre",
+      "pour nous rejoindre",
+      "comment aller sur",
+      "c'est quoi le but",
+      "tuto du serveur",
+      "guide officiel",
+      "wiki du serveur",
+      "lien du wiki",
+      "how to play",
+      "how to start",
+      "how to get started",
+      "beginner guide",
+      "survival tips",
+      "how do i craft",
+      "what's the key",
+      "how do i open",
+      "server rules",
+      "am i allowed",
+      "can i",
+      "rules of the server",
+      "how to join",
+      "how to get in",
+      "what's the goal",
+      "server tutorial",
+      "official guide",
+      "server wiki"
     ],
     "templates": [
       "Des questions sur le gameplay ? Va sur https://arcadia-echoes-of-power.fr/wiki et l'équipe t'expliquera tout! 🎮",
       "Tu veux savoir comment jouer ? Rends-toi ici: https://arcadia-echoes-of-power.fr/wiki - Les joueurs te diront comment faire!",
       "Besoin de conseils pour le serveur ? Demande sur https://arcadia-echoes-of-power.fr/wiki, y'a toujours quelqu'un pour aider! 👥",
       "Comment rejoindre le serveur ? C'est expliqué ici: https://arcadia-echoes-of-power.fr/wiki - Tout ce qu'il te faut!",
-      "T'as besoin d'aide pour jouer ? https://arcadia-echoes-of-power.fr/wiki c'est le bon endroit pour tes questions! 🚀"
+      "T'as besoin d'aide pour jouer ? https://arcadia-echoes-of-power.fr/wiki c'est le bon endroit pour tes questions! 🚀",
+      "Questions about gameplay? Check out https://arcadia-echoes-of-power.fr/wiki and the team will explain everything! 🎮",
+      "Want to know how to play? Head here: https://arcadia-echoes-of-power.fr/wiki - Players will show you how!",
+      "Need tips for the server? Ask on https://arcadia-echoes-of-power.fr/wiki, there's always someone to help! 👥",
+      "How do I join the server? It's explained here: https://arcadia-echoes-of-power.fr/wiki - Everything you need!",
+      "Need help playing? https://arcadia-echoes-of-power.fr/wiki is the perfect place for your questions! 🚀"
     ]
   },
   "vote": {
     "keywords": [
-      "vote", "voter", "comment voter", "ou voter", "où voter", "site de vote",
-      "faire un vote", "comment on fait pour voter", "comment on fais pour voter", "lien de vote"
+      "vote",
+      "voter",
+      "comment voter",
+      "ou voter",
+      "où voter",
+      "site de vote",
+      "faire un vote",
+      "comment on fait pour voter",
+      "comment on fais pour voter",
+      "lien de vote",
+      "voting",
+      "vote for",
+      "how to vote",
+      "where to vote",
+      "voting site",
+      "vote link",
+      "how do i vote"
     ],
     "templates": [
       "Tu peux voter ici : https://www.arcadia-echoes-of-power.fr/vote 🗳️",
@@ -61,294 +251,624 @@
       "Le lien de vote est ici : https://www.arcadia-echoes-of-power.fr/vote",
       "Chaque vote compte pour la communauté ! Rends-toi sur https://www.arcadia-echoes-of-power.fr/vote 💪",
       "Vote et aide Arcadia à grandir : https://www.arcadia-echoes-of-power.fr/vote 🚀",
-      "T'as oublié de voter ? C'est par ici : https://www.arcadia-echoes-of-power.fr/vote"
+      "T'as oublié de voter ? C'est par ici : https://www.arcadia-echoes-of-power.fr/vote",
+      "You can vote here: https://www.arcadia-echoes-of-power.fr/vote 🗳️",
+      "To vote and get rewards, head over here: https://www.arcadia-echoes-of-power.fr/vote ✨",
+      "The voting link is here: https://www.arcadia-echoes-of-power.fr/vote",
+      "Every vote counts for the community! Go to https://www.arcadia-echoes-of-power.fr/vote 💪",
+      "Vote and help Arcadia grow: https://www.arcadia-echoes-of-power.fr/vote 🚀"
     ]
   },
   "site": {
     "keywords": [
-      "site", "site web"
+      "site",
+      "site web",
+      "website",
+      "official website",
+      "arcadia website"
     ],
     "templates": [
       "Voici le site officiel : https://www.arcadia-echoes-of-power.fr/",
       "Tu cherches le site d'Arcadia ? C'est par là : https://www.arcadia-echoes-of-power.fr/ 🌐",
       "Découvre notre plateforme complète : https://www.arcadia-echoes-of-power.fr/ ✨",
-      "Tout ce que tu dois savoir sur Arcadia se trouve ici : https://www.arcadia-echoes-of-power.fr/ 📱"
+      "Tout ce que tu dois savoir sur Arcadia se trouve ici : https://www.arcadia-echoes-of-power.fr/ 📱",
+      "Here's the official website: https://www.arcadia-echoes-of-power.fr/",
+      "Looking for Arcadia's website? It's right here: https://www.arcadia-echoes-of-power.fr/ 🌐",
+      "Discover our complete platform: https://www.arcadia-echoes-of-power.fr/ ✨",
+      "Everything you need to know about Arcadia is here: https://www.arcadia-echoes-of-power.fr/ 📱"
     ]
   },
   "boutique": {
     "keywords": [
-      "boutique", "shop", "acheter", "grade", "rang"
+      "boutique",
+      "shop",
+      "acheter",
+      "grade",
+      "rang",
+      "buying",
+      "purchase",
+      "premium",
+      "rank",
+      "cosmetics"
     ],
     "templates": [
       "La boutique est ici : https://www.arcadia-echoes-of-power.fr/shop",
       "Envie de personnaliser ton expérience ? Visite la boutique : https://www.arcadia-echoes-of-power.fr/shop 🛍️",
       "Retrouve tous les grades et objets premium ici : https://www.arcadia-echoes-of-power.fr/shop ⭐",
-      "Pour améliorer ton expérience, la boutique est là : https://www.arcadia-echoes-of-power.fr/shop 💎"
+      "Pour améliorer ton expérience, la boutique est là : https://www.arcadia-echoes-of-power.fr/shop 💎",
+      "The shop is here: https://www.arcadia-echoes-of-power.fr/shop",
+      "Want to customize your experience? Check out the shop: https://www.arcadia-echoes-of-power.fr/shop 🛍️",
+      "Find all ranks and premium items here: https://www.arcadia-echoes-of-power.fr/shop ⭐",
+      "To improve your experience, the shop is waiting: https://www.arcadia-echoes-of-power.fr/shop 💎"
     ]
   },
   "wiki": {
     "keywords": [
-      "wiki", "guide", "documentation"
+      "wiki",
+      "guide",
+      "documentation",
+      "guides",
+      "help guide",
+      "tutorial"
     ],
     "templates": [
       "Le wiki est ici : https://www.arcadia-echoes-of-power.fr/wiki",
       "Pour apprendre les mécaniques du serveur, consulte le wiki : https://www.arcadia-echoes-of-power.fr/wiki 📚",
       "Tous les guides et documentations : https://www.arcadia-echoes-of-power.fr/wiki 🎓",
-      "Tu trouveras toutes tes réponses sur le wiki : https://www.arcadia-echoes-of-power.fr/wiki 🔍"
+      "Tu trouveras toutes tes réponses sur le wiki : https://www.arcadia-echoes-of-power.fr/wiki 🔍",
+      "The wiki is here: https://www.arcadia-echoes-of-power.fr/wiki",
+      "To learn the server mechanics, check the wiki: https://www.arcadia-echoes-of-power.fr/wiki 📚",
+      "All guides and documentation: https://www.arcadia-echoes-of-power.fr/wiki 🎓",
+      "You'll find all your answers on the wiki: https://www.arcadia-echoes-of-power.fr/wiki 🔍"
     ]
   },
   "faq": {
     "keywords": [
-      "faq", "question fréquente"
+      "faq",
+      "question fréquente",
+      "frequently asked questions",
+      "common questions",
+      "q&a"
     ],
     "templates": [
       "La FAQ est disponible ici : https://www.arcadia-echoes-of-power.fr/faq",
       "Tes questions ont probablement déjà été posées ! Va voir la FAQ : https://www.arcadia-echoes-of-power.fr/faq ❓",
       "Les questions fréquemment posées sont ici : https://www.arcadia-echoes-of-power.fr/faq 💡",
-      "Besoin de réponses rapides ? Consulte la FAQ : https://www.arcadia-echoes-of-power.fr/faq ⚡"
+      "Besoin de réponses rapides ? Consulte la FAQ : https://www.arcadia-echoes-of-power.fr/faq ⚡",
+      "The FAQ is available here: https://www.arcadia-echoes-of-power.fr/faq",
+      "Your questions have probably been asked! Check the FAQ: https://www.arcadia-echoes-of-power.fr/faq ❓",
+      "Frequently asked questions are here: https://www.arcadia-echoes-of-power.fr/faq 💡",
+      "Need quick answers? Check the FAQ: https://www.arcadia-echoes-of-power.fr/faq ⚡"
     ]
   },
   "support_liens": {
     "keywords": [
-      "support", "ticket", "aide"
+      "support",
+      "ticket",
+      "aide",
+      "help",
+      "customer support",
+      "support ticket"
     ],
     "templates": [
       "Le support est ici : https://www.arcadia-echoes-of-power.fr/support/tickets",
       "Ouvre un ticket de support pour ton problème : https://www.arcadia-echoes-of-power.fr/support/tickets 🎫",
       "L'équipe support est disponible ici : https://www.arcadia-echoes-of-power.fr/support/tickets 🤝",
-      "Besoin d'une aide professionnelle ? Crée un ticket : https://www.arcadia-echoes-of-power.fr/support/tickets 👩‍💼"
+      "Besoin d'une aide professionnelle ? Crée un ticket : https://www.arcadia-echoes-of-power.fr/support/tickets 👩‍💼",
+      "Support is here: https://www.arcadia-echoes-of-power.fr/support/tickets",
+      "Open a support ticket for your issue: https://www.arcadia-echoes-of-power.fr/support/tickets 🎫",
+      "The support team is available here: https://www.arcadia-echoes-of-power.fr/support/tickets 🤝",
+      "Need professional help? Create a ticket: https://www.arcadia-echoes-of-power.fr/support/tickets 👩‍💼"
     ]
   },
   "staff": {
     "keywords": [
-      "staff", "équipe", "modérateur", "admin", "modo"
+      "staff",
+      "équipe",
+      "modérateur",
+      "admin",
+      "modo",
+      "team",
+      "moderator",
+      "administrator"
     ],
     "templates": [
       "La page staff est ici : https://www.arcadia-echoes-of-power.fr/staff",
       "Rencontre l'équipe qui gère Arcadia : https://www.arcadia-echoes-of-power.fr/staff 👥",
       "Découvre nos modérateurs et admins : https://www.arcadia-echoes-of-power.fr/staff 🛡️",
-      "Qui est qui dans l'équipe ? Regarde la page staff : https://www.arcadia-echoes-of-power.fr/staff 👨‍💼"
+      "Qui est qui dans l'équipe ? Regarde la page staff : https://www.arcadia-echoes-of-power.fr/staff 👨‍💼",
+      "The staff page is here: https://www.arcadia-echoes-of-power.fr/staff",
+      "Meet the team managing Arcadia: https://www.arcadia-echoes-of-power.fr/staff 👥",
+      "Discover our moderators and admins: https://www.arcadia-echoes-of-power.fr/staff 🛡️",
+      "Who's who on the team? Check the staff page: https://www.arcadia-echoes-of-power.fr/staff 👨‍💼"
     ]
   },
   "discord": {
     "keywords": [
-      "discord"
+      "discord",
+      "discord server",
+      "join discord"
     ],
     "templates": [
       "Le Discord est ici : https://arcadia-echoes-of-power.fr/discord",
       "Rejoins la communauté sur Discord : https://arcadia-echoes-of-power.fr/discord 💬",
       "Viens discuter avec nous sur Discord : https://arcadia-echoes-of-power.fr/discord 🎮",
-      "L'endroit idéal pour suivre l'actualité : https://arcadia-echoes-of-power.fr/discord 📢"
+      "L'endroit idéal pour suivre l'actualité : https://arcadia-echoes-of-power.fr/discord 📢",
+      "Discord is here: https://arcadia-echoes-of-power.fr/discord",
+      "Join the community on Discord: https://arcadia-echoes-of-power.fr/discord 💬",
+      "Come chat with us on Discord: https://arcadia-echoes-of-power.fr/discord 🎮",
+      "The perfect place to stay updated: https://arcadia-echoes-of-power.fr/discord 📢"
     ]
   },
   "gallery": {
     "keywords": [
-      "galerie", "gallery", "screenshot", "photo"
+      "galerie",
+      "gallery",
+      "screenshot",
+      "photo",
+      "screenshots",
+      "photos"
     ],
     "templates": [
       "La galerie est ici : https://www.arcadia-echoes-of-power.fr/gallery",
       "Partage tes plus beaux screenshots ! https://www.arcadia-echoes-of-power.fr/gallery 📸",
       "Admire les créations de la communauté : https://www.arcadia-echoes-of-power.fr/gallery 🎨",
-      "Consulte la galerie pour voir les meilleurs moments : https://www.arcadia-echoes-of-power.fr/gallery 🏆"
+      "Consulte la galerie pour voir les meilleurs moments : https://www.arcadia-echoes-of-power.fr/gallery 🏆",
+      "The gallery is here: https://www.arcadia-echoes-of-power.fr/gallery",
+      "Share your best screenshots! https://www.arcadia-echoes-of-power.fr/gallery 📸",
+      "Admire the community's creations: https://www.arcadia-echoes-of-power.fr/gallery 🎨",
+      "Check the gallery for the best moments: https://www.arcadia-echoes-of-power.fr/gallery 🏆"
     ]
   },
   "community_video": {
     "keywords": [
-      "vidéo communauté", "youtube"
+      "vidéo communauté",
+      "youtube",
+      "community video",
+      "community videos",
+      "youtube channel"
     ],
     "templates": [
       "Les vidéos de la communauté sont ici : https://www.arcadia-echoes-of-power.fr/communitytube",
       "Regarde les vidéos de tes joueurs préférés ! https://www.arcadia-echoes-of-power.fr/communitytube 🎥",
       "Des tutos et streams au même endroit : https://www.arcadia-echoes-of-power.fr/communitytube ▶️",
-      "La plateforme vidéo de la communauté : https://www.arcadia-echoes-of-power.fr/communitytube 📹"
+      "La plateforme vidéo de la communauté : https://www.arcadia-echoes-of-power.fr/communitytube 📹",
+      "Community videos are here: https://www.arcadia-echoes-of-power.fr/communitytube",
+      "Watch videos from your favorite players! https://www.arcadia-echoes-of-power.fr/communitytube 🎥",
+      "Tutorials and streams in one place: https://www.arcadia-echoes-of-power.fr/communitytube ▶️",
+      "The community video platform: https://www.arcadia-echoes-of-power.fr/communitytube 📹"
     ]
   },
   "suggestions": {
     "keywords": [
-      "suggestion", "idée", "proposer"
+      "suggestion",
+      "idée",
+      "proposer",
+      "suggestions",
+      "ideas",
+      "propose",
+      "suggestion"
     ],
     "templates": [
       "Tu peux faire une suggestion ici : https://www.arcadia-echoes-of-power.fr/suggest",
       "Tes idées comptent ! Propose-les ici : https://www.arcadia-echoes-of-power.fr/suggest 💡",
       "Aide à façonner l'avenir d'Arcadia avec tes suggestions : https://www.arcadia-echoes-of-power.fr/suggest 🚀",
-      "T'as une idée géniale ? Partage-la : https://www.arcadia-echoes-of-power.fr/suggest ✨"
+      "T'as une idée géniale ? Partage-la : https://www.arcadia-echoes-of-power.fr/suggest ✨",
+      "You can make a suggestion here: https://www.arcadia-echoes-of-power.fr/suggest",
+      "Your ideas matter! Share them here: https://www.arcadia-echoes-of-power.fr/suggest 💡",
+      "Help shape the future of Arcadia with your suggestions: https://www.arcadia-echoes-of-power.fr/suggest 🚀",
+      "Got a great idea? Share it: https://www.arcadia-echoes-of-power.fr/suggest ✨"
     ]
   },
   "recruitment": {
     "keywords": [
-      "recrutement", "candidature", "postuler"
+      "recrutement",
+      "candidature",
+      "postuler",
+      "recruitment",
+      "apply",
+      "join the team"
     ],
     "templates": [
       "Le recrutement est ici : https://www.arcadia-echoes-of-power.fr/recrutement",
       "T'as envie de rejoindre l'équipe ? Postule ! https://www.arcadia-echoes-of-power.fr/recrutement 💼",
       "Nous recherchons de nouveaux talents : https://www.arcadia-echoes-of-power.fr/recrutement 🌟",
-      "Intéressé pour faire partie du staff ? C'est par ici : https://www.arcadia-echoes-of-power.fr/recrutement 👨‍🔬"
+      "Intéressé pour faire partie du staff ? C'est par ici : https://www.arcadia-echoes-of-power.fr/recrutement 👨‍🔬",
+      "Recruitment is here: https://www.arcadia-echoes-of-power.fr/recrutement",
+      "Want to join the team? Apply! https://www.arcadia-echoes-of-power.fr/recrutement 💼",
+      "We're looking for new talents: https://www.arcadia-echoes-of-power.fr/recrutement 🌟",
+      "Interested in joining the staff? It's right here: https://www.arcadia-echoes-of-power.fr/recrutement 👨‍🔬"
     ]
   },
   "players": {
     "keywords": [
-      "joueurs", "players"
+      "joueurs",
+      "players",
+      "player list",
+      "rankings"
     ],
     "templates": [
       "La liste des joueurs est ici : https://www.arcadia-echoes-of-power.fr/players",
       "Retrouve tous tes amis joueurs : https://www.arcadia-echoes-of-power.fr/players 👥",
       "Consulte le classement des joueurs : https://www.arcadia-echoes-of-power.fr/players 🏅",
-      "Qui joue en ce moment ? Regarde ici : https://www.arcadia-echoes-of-power.fr/players 🎮"
+      "Qui joue en ce moment ? Regarde ici : https://www.arcadia-echoes-of-power.fr/players 🎮",
+      "The player list is here: https://www.arcadia-echoes-of-power.fr/players",
+      "Find all your player friends: https://www.arcadia-echoes-of-power.fr/players 👥",
+      "Check the player rankings: https://www.arcadia-echoes-of-power.fr/players 🏅",
+      "Who's playing right now? Check here: https://www.arcadia-echoes-of-power.fr/players 🎮"
     ]
   },
   "reviews": {
     "keywords": [
-      "avis", "review", "témoignage"
+      "avis",
+      "review",
+      "témoignage",
+      "reviews",
+      "testimonial",
+      "feedback"
     ],
     "templates": [
       "Les avis sont ici : https://www.arcadia-echoes-of-power.fr/review",
       "Partage ton expérience avec la communauté : https://www.arcadia-echoes-of-power.fr/review ⭐",
       "Lis ce que pensent les autres joueurs : https://www.arcadia-echoes-of-power.fr/review 📝",
-      "Donne ton avis sur Arcadia : https://www.arcadia-echoes-of-power.fr/review 💬"
+      "Donne ton avis sur Arcadia : https://www.arcadia-echoes-of-power.fr/review 💬",
+      "Reviews are here: https://www.arcadia-echoes-of-power.fr/review",
+      "Share your experience with the community: https://www.arcadia-echoes-of-power.fr/review ⭐",
+      "See what other players think: https://www.arcadia-echoes-of-power.fr/review 📝",
+      "Give your opinion on Arcadia: https://www.arcadia-echoes-of-power.fr/review 💬"
     ]
   },
   "daily_reward": {
     "keywords": [
-      "récompense journalière", "daily", "coffre journalier"
+      "récompense journalière",
+      "daily",
+      "coffre journalier",
+      "daily chest",
+      "daily reward",
+      "daily rewards"
     ],
     "templates": [
       "La récompense quotidienne est ici : https://www.arcadia-echoes-of-power.fr/mydailychest",
       "Réclame ton coffre journalier ! https://www.arcadia-echoes-of-power.fr/mydailychest 🎁",
       "Don't forget your daily rewards : https://www.arcadia-echoes-of-power.fr/mydailychest 💰",
-      "Chaque jour apporte ses récompenses : https://www.arcadia-echoes-of-power.fr/mydailychest ✨"
+      "Chaque jour apporte ses récompenses : https://www.arcadia-echoes-of-power.fr/mydailychest ✨",
+      "The daily reward is here: https://www.arcadia-echoes-of-power.fr/mydailychest",
+      "Claim your daily chest! https://www.arcadia-echoes-of-power.fr/mydailychest 🎁",
+      "Don't forget your daily rewards: https://www.arcadia-echoes-of-power.fr/mydailychest 💰",
+      "Every day brings rewards: https://www.arcadia-echoes-of-power.fr/mydailychest ✨"
     ]
   },
   "donation": {
     "keywords": [
-      "don", "donation", "soutenir"
+      "don",
+      "donation",
+      "soutenir",
+      "donate",
+      "support",
+      "support the project"
     ],
     "templates": [
       "Tu peux soutenir le projet ici : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00",
       "Aide à faire grandir Arcadia ! https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 ❤️",
       "Ton soutien nous aide énormément : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 💙",
-      "Contribue à notre développement : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 🙏"
+      "Contribue à notre développement : https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 🙏",
+      "You can support the project here: https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00",
+      "Help Arcadia grow! https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 ❤️",
+      "Your support helps us a lot: https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 💙",
+      "Contribute to our development: https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00 🙏"
     ]
   },
   "calendar": {
     "keywords": [
-      "calendrier", "événement", "event"
+      "calendrier",
+      "événement",
+      "event",
+      "calendar",
+      "events",
+      "schedule"
     ],
     "templates": [
       "Le calendrier est ici : https://www.arcadia-echoes-of-power.fr/calendar",
       "Reste au courant des événements : https://www.arcadia-echoes-of-power.fr/calendar 📅",
       "Découvre les prochains événements : https://www.arcadia-echoes-of-power.fr/calendar 🎉",
-      "Marque tes événements favoris : https://www.arcadia-echoes-of-power.fr/calendar 📌"
+      "Marque tes événements favoris : https://www.arcadia-echoes-of-power.fr/calendar 📌",
+      "The calendar is here: https://www.arcadia-echoes-of-power.fr/calendar",
+      "Stay updated on events: https://www.arcadia-echoes-of-power.fr/calendar 📅",
+      "Discover upcoming events: https://www.arcadia-echoes-of-power.fr/calendar 🎉",
+      "Mark your favorite events: https://www.arcadia-echoes-of-power.fr/calendar 📌"
     ]
   },
   "changelog": {
     "keywords": [
-      "changelog", "mise à jour"
+      "changelog",
+      "mise à jour",
+      "updates",
+      "patch notes"
     ],
     "templates": [
       "Le changelog est ici : https://www.arcadia-echoes-of-power.fr/changelog",
       "Suis les dernières mises à jour : https://www.arcadia-echoes-of-power.fr/changelog 📝",
       "Quoi de neuf sur le serveur ? https://www.arcadia-echoes-of-power.fr/changelog ⚙️",
-      "Découvre les changements récents : https://www.arcadia-echoes-of-power.fr/changelog 🔄"
+      "Découvre les changements récents : https://www.arcadia-echoes-of-power.fr/changelog 🔄",
+      "The changelog is here: https://www.arcadia-echoes-of-power.fr/changelog",
+      "Follow the latest updates: https://www.arcadia-echoes-of-power.fr/changelog 📝",
+      "What's new on the server? https://www.arcadia-echoes-of-power.fr/changelog ⚙️",
+      "Discover recent changes: https://www.arcadia-echoes-of-power.fr/changelog 🔄"
     ]
   },
   "news": {
     "keywords": [
-      "news", "actualité", "annonce"
+      "news",
+      "actualité",
+      "annonce",
+      "news",
+      "announcements",
+      "announcement"
     ],
     "templates": [
       "Les actualités sont ici : https://www.arcadia-echoes-of-power.fr/news",
       "Sois toujours au courant de l'actualité : https://www.arcadia-echoes-of-power.fr/news 📰",
       "Les dernières annonces importantes : https://www.arcadia-echoes-of-power.fr/news 📢",
-      "Ne manque pas les infos importantes : https://www.arcadia-echoes-of-power.fr/news 🔔"
+      "Ne manque pas les infos importantes : https://www.arcadia-echoes-of-power.fr/news 🔔",
+      "News is here: https://www.arcadia-echoes-of-power.fr/news",
+      "Always stay updated: https://www.arcadia-echoes-of-power.fr/news 📰",
+      "Latest important announcements: https://www.arcadia-echoes-of-power.fr/news 📢",
+      "Don't miss important info: https://www.arcadia-echoes-of-power.fr/news 🔔"
     ]
   },
   "rules": {
     "keywords": [
-      "règlement", "règles", "charte"
+      "règlement",
+      "règles",
+      "charte",
+      "rules",
+      "terms",
+      "code of conduct"
     ],
     "templates": [
       "Le règlement est ici : https://www.arcadia-echoes-of-power.fr/reglement",
       "Lis le règlement pour bien comprendre les règles : https://www.arcadia-echoes-of-power.fr/reglement 📖",
       "Pour une meilleure expérience, respecte nos règles : https://www.arcadia-echoes-of-power.fr/reglement ⚖️",
-      "Tout est expliqué dans la charte : https://www.arcadia-echoes-of-power.fr/reglement 🛡️"
+      "Tout est expliqué dans la charte : https://www.arcadia-echoes-of-power.fr/reglement 🛡️",
+      "The rules are here: https://www.arcadia-echoes-of-power.fr/reglement",
+      "Read the rules to understand them well: https://www.arcadia-echoes-of-power.fr/reglement 📖",
+      "For a better experience, respect our rules: https://www.arcadia-echoes-of-power.fr/reglement ⚖️",
+      "Everything is explained in the charter: https://www.arcadia-echoes-of-power.fr/reglement 🛡️"
     ]
   },
   "profile": {
     "keywords": [
-      "profil", "compte"
+      "profil",
+      "compte",
+      "profile",
+      "account",
+      "my profile"
     ],
     "templates": [
       "Ton profil est ici : https://www.arcadia-echoes-of-power.fr/profile",
       "Accède à tes infos de compte : https://www.arcadia-echoes-of-power.fr/profile 👤",
       "Personnalise ton profil : https://www.arcadia-echoes-of-power.fr/profile 🎨",
-      "Gère ton profil depuis le portail : https://www.arcadia-echoes-of-power.fr/profile ⚙️"
+      "Gère ton profil depuis le portail : https://www.arcadia-echoes-of-power.fr/profile ⚙️",
+      "Your profile is here: https://www.arcadia-echoes-of-power.fr/profile",
+      "Access your account info: https://www.arcadia-echoes-of-power.fr/profile 👤",
+      "Customize your profile: https://www.arcadia-echoes-of-power.fr/profile 🎨",
+      "Manage your profile from the portal: https://www.arcadia-echoes-of-power.fr/profile ⚙️"
     ]
   },
   "shop_history": {
     "keywords": [
-      "historique achat"
+      "historique achat",
+      "purchase history",
+      "my purchases",
+      "transaction history"
     ],
     "templates": [
       "L'historique de boutique est ici : https://www.arcadia-echoes-of-power.fr/shop/profile",
       "Vérifie tes achats précédents : https://www.arcadia-echoes-of-power.fr/shop/profile 📦",
       "Tous tes achats sont listés ici : https://www.arcadia-echoes-of-power.fr/shop/profile 🛒",
-      "Consult ton historique d'achats : https://www.arcadia-echoes-of-power.fr/shop/profile 💳"
+      "Consult ton historique d'achats : https://www.arcadia-echoes-of-power.fr/shop/profile 💳",
+      "Shop history is here: https://www.arcadia-echoes-of-power.fr/shop/profile",
+      "Check your previous purchases: https://www.arcadia-echoes-of-power.fr/shop/profile 📦",
+      "All your purchases are listed here: https://www.arcadia-echoes-of-power.fr/shop/profile 🛒",
+      "Check your purchase history: https://www.arcadia-echoes-of-power.fr/shop/profile 💳"
     ]
   },
   "my_skin_3d": {
     "keywords": [
-      "skin", "skin 3d"
+      "skin",
+      "skin 3d",
+      "skin 3d viewer",
+      "my skin"
     ],
     "templates": [
       "Le visualiseur de skin 3D est ici : https://www.arcadia-echoes-of-power.fr/skin3d",
       "Visualise ton skin en 3D : https://www.arcadia-echoes-of-power.fr/skin3d 🎨",
       "Vois comment tu parais en jeu ! https://www.arcadia-echoes-of-power.fr/skin3d 👕",
-      "Consulte la prévisualisation de ton skin : https://www.arcadia-echoes-of-power.fr/skin3d 3️⃣"
+      "Consulte la prévisualisation de ton skin : https://www.arcadia-echoes-of-power.fr/skin3d 3️⃣",
+      "The 3D skin viewer is here: https://www.arcadia-echoes-of-power.fr/skin3d",
+      "View your skin in 3D: https://www.arcadia-echoes-of-power.fr/skin3d 🎨",
+      "See how you look in-game! https://www.arcadia-echoes-of-power.fr/skin3d 👕",
+      "Check your skin preview: https://www.arcadia-echoes-of-power.fr/skin3d 3️⃣"
     ]
   },
   "ip": {
     "keywords": [
-      "c'est quoi l'ip", "donnez l'ip", "donne l'ip", "donner l'ip", "ip du serveur", "ip du serv", "ip pour jouer", "ip de connexion", "ton ip", "son ip", "l'ip ",
-      "quelle est l'adresse", "adresse du serveur", "adresse de connexion", "adresse pour rejoindre", "l'adresse ip",
-      "comment se connecter", "se connecter au jeu", "port du serveur", "c'est quoi le port"
+      "c'est quoi l'ip",
+      "donnez l'ip",
+      "donne l'ip",
+      "donner l'ip",
+      "ip du serveur",
+      "ip du serv",
+      "ip pour jouer",
+      "ip de connexion",
+      "ton ip",
+      "son ip",
+      "l'ip ",
+      "quelle est l'adresse",
+      "adresse du serveur",
+      "adresse de connexion",
+      "adresse pour rejoindre",
+      "l'adresse ip",
+      "comment se connecter",
+      "se connecter au jeu",
+      "port du serveur",
+      "c'est quoi le port",
+      "what's the ip",
+      "server ip",
+      "server address",
+      "how to connect",
+      "connection address",
+      "server port",
+      "what port",
+      "ip address"
     ],
     "templates": [
       "Tu cherches l'IP du serveur ? Toutes les infos pour nous rejoindre sont ici : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🌍",
       "Pour te connecter à Arcadia, suis les instructions sur cette page : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🚀",
       "L'adresse du serveur et la marche à suivre sont expliquées ici : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🎮",
       "Envie de nous rejoindre ? Voici l'IP et les détails : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia ✨",
-      "Toutes les infos de connexion sont sur le wiki : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia À très vite en jeu !"
+      "Toutes les infos de connexion sont sur le wiki : https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia À très vite en jeu !",
+      "Looking for the server IP? All the info to join us is here: https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🌍",
+      "To connect to Arcadia, follow the instructions on this page: https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🚀",
+      "The server address and how to connect are explained here: https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia 🎮",
+      "Want to join us? Here's the IP and details: https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia ✨",
+      "All connection info is on the wiki: https://arcadia-echoes-of-power.fr/wiki/technique/rejoindre-arcadia See you in-game!"
     ]
   },
   "serveur_prive": {
     "keywords": [
-      "serveur privé", "serveur prive", "faire un serveur privé", "avoir un serveur",
-      "serveur perso", "mon serveur", "creer un serveur", "créer un serveur", "mon propre serveur",
-      "heberger un serveur", "héberger arcadia", "hebergement minecraft", "hébergement java",
-      "serveur lordhosting", "louer un serveur", "serveur local", "jouer en local", "réseau local"
+      "serveur privé",
+      "serveur prive",
+      "faire un serveur privé",
+      "avoir un serveur",
+      "serveur perso",
+      "mon serveur",
+      "creer un serveur",
+      "créer un serveur",
+      "mon propre serveur",
+      "heberger un serveur",
+      "héberger arcadia",
+      "hebergement minecraft",
+      "hébergement java",
+      "serveur lordhosting",
+      "louer un serveur",
+      "serveur local",
+      "jouer en local",
+      "réseau local",
+      "private server",
+      "own server",
+      "create server",
+      "host server",
+      "local server",
+      "minecraft hosting"
     ],
     "templates": [
       "Tu veux créer ton propre serveur privé ? Découvre comment faire ici : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🛠️",
       "Pour héberger ton serveur Arcadia privé, suis notre guide détaillé : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 💻",
       "Besoin d'aide pour ton serveur perso ? Ce tuto est fait pour toi : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🔧",
       "Si tu montes un serveur privé, jette un œil à cet article : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 📚",
-      "Toutes les étapes pour installer ton propre serveur sont expliquées là : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🚀"
+      "Toutes les étapes pour installer ton propre serveur sont expliquées là : https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🚀",
+      "Want to create your own private server? Discover how here: https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🛠️",
+      "To host your private Arcadia server, follow our detailed guide: https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 💻",
+      "Need help with your own server? This tutorial is for you: https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🔧",
+      "Setting up a private server? Check out this article: https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 📚",
+      "All the steps to install your own server are explained here: https://lordhosting.fr/blog/minecraft-java-edition/installer-serveur-arcadia-echoes-of-power-minecraft/ 🚀"
     ]
   },
   "insult": {
     "keywords": [
-      "merde", "putain", "connard", "connasse", "salope", "salopard", "fdp", "fils de pute",
-      " ta gueule", " tg ", "ferme ta gueule", "ntm", "nique ta mere", "nique ta mère", " niquer ",
-      "fait chier", "vas chier", "allez chier",
-      "con", "conne", "espece de con", " idiot", " débile", "gogol", "mongol", "abruti",
-      "bâtard", "batard", "enculé", "encule", "encul"
+      "merde",
+      "putain",
+      "connard",
+      "connasse",
+      "salope",
+      "salopard",
+      "fdp",
+      "fils de pute",
+      " ta gueule",
+      " tg ",
+      "ferme ta gueule",
+      "ntm",
+      "nique ta mere",
+      "nique ta mère",
+      " niquer ",
+      "fait chier",
+      "vas chier",
+      "allez chier",
+      "con",
+      "conne",
+      "espece de con",
+      " idiot",
+      " débile",
+      "gogol",
+      "mongol",
+      "abruti",
+      "bâtard",
+      "batard",
+      "enculé",
+      "encule",
+      "encul",
+      "fuck",
+      "bullshit",
+      "damn",
+      "hell",
+      "shut up",
+      "asshole",
+      "bastard",
+      "stupid",
+      "idiot",
+      "dumb",
+      "moron",
+      "retard",
+      "loser",
+      "screw you",
+      "go fuck",
+      "crap",
+      "piss off"
     ],
     "templates": [
       "Attention à ton langage ! Le respect est primordial ici. Je t'invite à (re)lire le règlement : https://arcadia-echoes-of-power.fr/reglement ⚠️",
       "Hop hop hop, on surveille son vocabulaire ! Merci de respecter les autres joueurs et le règlement du serveur : https://arcadia-echoes-of-power.fr/reglement 🛑",
-      "Ce genre de propos n'est pas toléré sur notre Discord. Merci de faire attention à ce que tu dis. Le règlement est disponible ici : https://arcadia-echoes-of-power.fr/reglement 📜",
+      "Ce genre de propos n'est pas toléré sur notre Discord. Merci de respecter les autres joueurs et le règlement du serveur : https://arcadia-echoes-of-power.fr/reglement 📜",
       "Restons courtois ! Les insultes n'ont pas leur place ici. N'oublie pas de consulter notre règlement : https://arcadia-echoes-of-power.fr/reglement 🛡️",
-      "Attention aux mots que tu emploies. Le non-respect des règles peut entraîner des sanctions. Lis le règlement par ici : https://arcadia-echoes-of-power.fr/reglement ⛔"
+      "Attention aux mots que tu emploies. Le non-respect des règles peut entraîner des sanctions. Lis le règlement par ici : https://arcadia-echoes-of-power.fr/reglement ⛔",
+      "Watch your language! Respect is essential here. I invite you to read the rules: https://arcadia-echoes-of-power.fr/reglement ⚠️",
+      "Hey, watch your words! Please respect other players and the server rules: https://arcadia-echoes-of-power.fr/reglement 🛑",
+      "That kind of language is not tolerated on our Discord. Please respect other players and follow the rules: https://arcadia-echoes-of-power.fr/reglement 📜",
+      "Let's stay courteous! Insults have no place here. Don't forget to check our rules: https://arcadia-echoes-of-power.fr/reglement 🛡️",
+      "Watch what you say. Breaking the rules can result in penalties. Check the rules here: https://arcadia-echoes-of-power.fr/reglement ⛔"
+    ]
+  },
+  "server_pack": {
+    "keywords": [
+      "serveur pack",
+      "serverpack",
+      "pack du serveur",
+      "télécharger le pack serveur",
+      "download server pack",
+      "où télécharger le serveur pack",
+      "lien serveur pack",
+      "server pack link",
+      "pourrais avoir le serveur pack",
+      "pourrais avoir le server pack",
+      "avoir le serveur pack",
+      "avoir le server pack",
+      "get the server pack",
+      "have a server pack",
+      "has a server pack",
+      "does this have a server pack",
+      "does it have a server pack",
+      "do you have a server pack"
+    ],
+    "templates": [
+      "Voici le lien pour télécharger le server pack : https://www.arcadia-echoes-of-power.fr/serverpack 📦",
+      "Tu peux télécharger le server pack ici : https://www.arcadia-echoes-of-power.fr/serverpack 🎮",
+      "Le serveur pack se télécharge par ici : https://www.arcadia-echoes-of-power.fr/serverpack 📥",
+      "Pour avoir le serveur pack, c'est là : https://www.arcadia-echoes-of-power.fr/serverpack 📦",
+      "Here's the link to download the server pack: https://www.arcadia-echoes-of-power.fr/serverpack 📦",
+      "You can download the server pack here: https://www.arcadia-echoes-of-power.fr/serverpack 🎮",
+      "The server pack download is right here: https://www.arcadia-echoes-of-power.fr/serverpack 📥",
+      "To get the server pack, click here: https://www.arcadia-echoes-of-power.fr/serverpack 📦"
     ]
   }
 }

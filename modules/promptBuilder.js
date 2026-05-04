@@ -1,4 +1,6 @@
 // modules/promptBuilder.js
+const { detectLanguage, getLanguageInstruction, getFormatInstructions } = require('./languageDetector');
+
 function buildPromptContext(message, dataManager) {
     const msgContent = message.content.toLowerCase();
     let contextData = '';
@@ -56,13 +58,20 @@ function buildPromptContext(message, dataManager) {
     };
 }
 
-function buildFullPrompt(message, context, dataManager, replyCtx = '') {
+function buildFullPrompt(message, context, dataManager, replyCtx = '', ragContext = '') {
     const promptConfig = dataManager.data.promptConfig;
+
+    // Detect user's language from the message
+    const detectedLanguage = detectLanguage(message.content);
+    const languageInstruction = getLanguageInstruction(detectedLanguage);
+
+    // Get format instructions based on detected language
+    const formatInstructions = getFormatInstructions(detectedLanguage);
+    const format = formatInstructions.join('\n');
 
     const identity = promptConfig.identity || 'Tu es Arcadius.';
     const directives = (promptConfig.directives || []).join('\n');
     const personality = (promptConfig.personality || []).join('\n');
-    const format = (promptConfig.format || []).join('\n');
 
     const systemInstruction = `--- IDENTITÉ ---
 ${identity}
@@ -72,11 +81,15 @@ ${directives}
 
 ${context.serverKB}
 ${context.contextData}
+${ragContext}
 
 --- PERSONNALITÉ ---
 ${personality}
 ${context.userInstr}
 ${context.memoryContext}
+
+--- LANGUE ---
+${languageInstruction}
 
 --- FORMAT ---
 ${format}`;

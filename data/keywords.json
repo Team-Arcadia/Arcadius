@@ -1,130 +1,316 @@
 {
   "enabled": true,
   "caseSensitive": false,
-  "excludedChannels": ["1350128375804596275", "1454990616327884955" ],
+  "excludedChannels": [
+    "1350128375804596275",
+    "1454990616327884955"
+  ],
   "keywords": [
     {
-      "word": ["crash", "bug", "problème"],
+      "word": [
+        "crash",
+        "bug",
+        "problème",
+        "issue",
+        "problem"
+      ],
       "response": "https://discord.com/channels/1346965857288589472/1348235685047566346",
       "enabled": true
     },
     {
-      "word": ["site", "site web"],
+      "word": [
+        "site",
+        "site web",
+        "website",
+        "web"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/",
       "enabled": true
     },
     {
-      "word": ["boutique", "shop", "acheter", "grade", "rang"],
+      "word": [
+        "boutique",
+        "shop",
+        "acheter",
+        "grade",
+        "rang",
+        "buy",
+        "purchase",
+        "store",
+        "rank"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/shop",
       "enabled": true
     },
     {
-      "word": ["wiki", "guide", "documentation"],
+      "word": [
+        "wiki",
+        "guide",
+        "documentation",
+        "doc"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/wiki",
       "enabled": true
     },
     {
-      "word": ["faq", "question fréquente"],
+      "word": [
+        "faq",
+        "question fréquente",
+        "frequently asked questions",
+        "common questions"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/faq",
       "enabled": true
     },
     {
-      "word": ["launcher", "télécharger", "installer", "modpack", "rejoindre"],
+      "word": [
+        "launcher",
+        "télécharger",
+        "installer",
+        "download",
+        "install",
+        "join",
+        "get started",
+        "modpack",
+        "rejoindre"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/launcher",
       "enabled": true
     },
     {
-      "word": ["support", "ticket", "aide"],
+      "word": [
+        "serverpack",
+        "server pack",
+        "serveur pack",
+        "serveurpack",
+        "avoir un server pack",
+        "avoir un pack serveur",
+        "a un server pack",
+        "a un pack serveur",
+        "ça a un server pack",
+        "ça a un pack serveur",
+        "vous avez un server pack",
+        "t'as un server pack",
+        "tu as un server pack",
+        "avoir server pack",
+        "avoir pack serveur",
+        "a server pack",
+        "does this have a server pack",
+        "do you have a server pack",
+        "do you have server pack",
+        "does it have a server pack",
+        "is there a server pack",
+        "have you got a server pack",
+        "can i get a server pack",
+        "how to get server pack"
+      ],
+      "response": "https://www.arcadia-echoes-of-power.fr/serverpack",
+      "enabled": true
+    },
+    {
+      "word": [
+        "support",
+        "ticket",
+        "aide",
+        "help",
+        "assistance"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/support/tickets",
       "enabled": true
     },
     {
-      "word": ["staff", "équipe", "modérateur", "admin"],
+      "word": [
+        "staff",
+        "équipe",
+        "modérateur",
+        "admin",
+        "team",
+        "moderator",
+        "administrator",
+        "mod"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/staff",
       "enabled": true
     },
     {
-      "word": ["vote", "voter", "voté"],
+      "word": [
+        "vote",
+        "voter",
+        "voté",
+        "voting",
+        "vote for us"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/vote",
       "enabled": true
     },
     {
-      "word": ["discord"],
+      "word": [
+        "discord"
+      ],
       "response": "https://arcadia-echoes-of-power.fr/discord",
       "enabled": true
     },
     {
-      "word": ["galerie", "gallery", "screenshot", "photo"],
+      "word": [
+        "galerie",
+        "gallery",
+        "screenshot",
+        "photo",
+        "pictures",
+        "images",
+        "ss"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/gallery",
       "enabled": true
     },
     {
-      "word": ["vidéo communauté", "youtube"],
+      "word": [
+        "vidéo communauté",
+        "youtube",
+        "community videos",
+        "videos"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/communitytube",
       "enabled": true
     },
     {
-      "word": ["suggestion", "idée", "proposer"],
+      "word": [
+        "suggestion",
+        "idea",
+        "suggest",
+        "feature request",
+        "idée",
+        "proposer"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/suggest",
       "enabled": true
     },
     {
-      "word": ["recrutement", "candidature", "postuler"],
+      "word": [
+        "recrutement",
+        "candidature",
+        "postuler",
+        "recruitment",
+        "hiring",
+        "apply"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/recrutement",
       "enabled": true
     },
     {
-      "word": ["joueurs", "players"],
+      "word": [
+        "joueurs",
+        "players",
+        "community"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/players",
       "enabled": true
     },
     {
-      "word": ["avis", "review", "témoignage"],
+      "word": [
+        "avis",
+        "review",
+        "feedback",
+        "opinion",
+        "témoignage"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/review",
       "enabled": true
     },
     {
-      "word": ["récompense journalière", "daily", "coffre journalier"],
+      "word": [
+        "récompense journalière",
+        "daily",
+        "coffre journalier",
+        "daily reward",
+        "daily chest"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/mydailychest",
       "enabled": true
     },
     {
-      "word": ["don", "donation", "soutenir"],
+      "word": [
+        "don",
+        "donation",
+        "soutenir",
+        "donate",
+        "support us"
+      ],
       "response": "https://buy.stripe.com/3cI3co6X97Vy4IK50QfIs00",
       "enabled": true
     },
     {
-      "word": ["calendrier", "événement", "event"],
+      "word": [
+        "calendrier",
+        "événement",
+        "event",
+        "calendar",
+        "events"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/calendar",
       "enabled": true
     },
     {
-      "word": ["changelog", "mise à jour"],
+      "word": [
+        "changelog",
+        "mise à jour",
+        "patch notes",
+        "update",
+        "changes"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/changelog",
       "enabled": true
     },
     {
-      "word": ["news", "actualité", "annonce"],
+      "word": [
+        "news",
+        "actualité",
+        "annonce",
+        "announcement",
+        "latest"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/news",
       "enabled": true
     },
     {
-      "word": ["règlement", "règles", "charte"],
+      "word": [
+        "règlement",
+        "règles",
+        "charte",
+        "rules",
+        "terms of service",
+        "code of conduct"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/reglement",
       "enabled": true
     },
     {
-      "word": ["profil", "compte"],
+      "word": [
+        "profil",
+        "compte",
+        "profile",
+        "account",
+        "my account"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/profile",
       "enabled": true
     },
     {
-      "word": ["historique achat"],
+      "word": [
+        "historique achat",
+        "purchase history",
+        "order history"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/shop/profile",
       "enabled": true
     },
     {
-      "word": ["skin", "skin 3d"],
+      "word": [
+        "3d skin",
+        "character skin",
+        "skin",
+        "skin 3d"
+      ],
       "response": "https://www.arcadia-echoes-of-power.fr/skin3d",
       "enabled": true
     }
