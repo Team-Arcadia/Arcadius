@@ -1,0 +1,89 @@
+# Arcadius Bot - Business License
+
+**Copyright © 2026 - All Rights Reserved**
+
+## Terms and Conditions
+
+### 1. Ownership
+
+Arcadius is a Discord bot designed for Minecraft server management and player assistance. This software and all its source code are the exclusive property of the copyright holder. All rights are reserved.
+
+### 2. Grant of License
+
+Subject to the terms and conditions of this license, the copyright holder hereby grants you a non-exclusive, non-transferable license to use this Discord bot for:
+
+- **Personal Use**: For your own private Discord server
+- **Business Use**: For commercial use by businesses, companies, and organizations
+- **Server Management**: For managing and assisting players on Minecraft servers
+- **Internal Deployment**: For internal use within your organization
+
+### 3. Permitted Activities
+
+You are permitted to:
+
+- ✅ Use Arcadius on your Discord server(s) linked to your Minecraft server(s)
+- ✅ Modify configuration files (config.json, prompt_config.json, rag_config.json, language files)
+- ✅ Use in commercial/business environments
+- ✅ Deploy on multiple servers with separate licenses for each
+- ✅ Report bugs and suggest features
+- ✅ Use knowledge base customization and RAG system for your specific needs
+- ✅ Customize help detection and response patterns
+
+### 4. Restrictions
+
+You are NOT permitted to:
+
+- ❌ Redistribute, sell, or lease this bot or its source code
+- ❌ Modify, reverse-engineer, or decompile the core source code
+- ❌ Share the source code or bot token with third parties
+- ❌ Create derivative works or forks of Arcadius
+- ❌ Remove or alter copyright notices and license information
+- ❌ Use this bot to create competing Discord bot products
+- ❌ Grant sublicenses or access to other parties
+- ❌ Host or distribute this bot as a public service
+
+### 5. Commercial Use Terms
+
+For business use:
+
+- Each Discord server instance requires one license
+- You may use Arcadius to provide services to your players/customers
+- You may monetize your server (cosmetics, donations, etc.) - Arcadius can be included as a feature
+- You cannot resell or redistribute Arcadius
+- Commercial support and custom features are available upon request
+
+### 6. Multi-Server Licensing
+
+If you operate multiple Discord servers or Minecraft servers, you need a separate license for each server instance. Contact the copyright holder for multi-server licensing options or enterprise licenses.
+
+### 7. Disclaimer
+
+ARCADIUS BOT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY DAMAGE, DATA LOSS, OR DISRUPTION RESULTING FROM THE USE OF THIS BOT.
+
+### 8. Termination
+
+This license is effective until terminated. The copyright holder may terminate this license immediately if you violate any of the terms and conditions. Upon termination, you must cease all use of Arcadius and remove the bot from your Discord server(s).
+
+### 9. Data Privacy and Security
+
+Users are responsible for:
+
+- Maintaining the confidentiality of their bot token
+- Securely storing configuration files and database files
+- Complying with Discord's Terms of Service
+- Ensuring compliance with GDPR and other privacy regulations
+- Protecting player data collected by the bot
+
+### 10. Modifications to This License
+
+The copyright holder reserves the right to modify these terms at any time. Continued use of Arcadius constitutes acceptance of the modified terms.
+
+### 11. Governing Law
+
+This license is governed by and construed in accordance with the laws of France.
+
+---
+
+**For licensing inquiries, commercial use questions, multi-server licensing options, or support:**
+
+Please contact the copyright holder through the official Arcadius repository or documentation channels.
